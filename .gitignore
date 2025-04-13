@@ -45,3 +45,16 @@ ENV/
 # Local development
 .DS_Store
 Thumbs.db
+
+# Added from the code block
+streamlit
+openai
+groq
+ollama
+psycopg2-binary
+sqlalchemy
+langchain
+langchain-community
+langchain-core
+faiss-cpu
+langchain-openai

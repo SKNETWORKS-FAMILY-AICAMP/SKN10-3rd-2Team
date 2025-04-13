@@ -1,0 +1,14 @@
+version: '3' # 도커컴포트 버전
+services: # 내가 생성할 서비스(컴퓨터/애플리케이션) 리스트 
+  first-postgresql: # 내맘대로 이름작성
+    image: pgvector/pgvector:pg17 # 도커허브에 등록된 이미지명 
+    container_name: my-postgresql # 내맘대로 컨테이너 이름작성
+    restart: always # 항상 시작해줘~~~ 
+    volumes: # 데이터 저장소 -> 부모PC의 폴더:컨테이너(자식PC) 서비스 폴더
+      - ./db:/var/lib/postgresql/data
+    environment: # 컨터이너 가상환결에 변수 등록 
+      POSTGRES_USER: postgres # root 계정명 
+      POSTGRES_PASSWORD: p1234 # root 비밀번호 
+    ports: # 컨테이너에 등록된 애플리케이션 port 
+      - "5432:5432" # Port 포워딩: 컨테이너의 애플리케이션 port를 부모PC의 port와 연결  
+
