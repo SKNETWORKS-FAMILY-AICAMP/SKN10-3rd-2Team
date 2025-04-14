@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ko">
+                                                                <head>
+                <script type="text/javascript">if (!window.T) { window.T = {} }
+window.T.config = {"TOP_SSL_URL":"https://www.tistory.com","PREVIEW":false,"ROLE":"guest","PREV_PAGE":"","NEXT_PAGE":"","BLOG":{"id":6559128,"name":"flow-like-river","title":"흘러가는 대로","isDormancy":false,"nickName":"별이되고싶은우주먼지","status":"open","profileStatus":"normal"},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https://www.tistory.com/auth/login/?redirectUrl=https://flow-like-river.tistory.com/m/2","DEFAULT_URL":"https://flow-like-river.tistory.com","USER":{"name":null,"homepage":null,"id":0,"profileImage":null},"SUBSCRIPTION":{"status":"none","isConnected":false,"isPending":false,"isWait":false,"isProcessing":false,"isNone":true},"IS_LOGIN":false,"HAS_BLOG":false,"IS_SUPPORT":false,"IS_SCRAPABLE":false,"TOP_URL":"http://www.tistory.com","JOIN_URL":"https://www.tistory.com/member/join","PHASE":"prod","ROLE_GROUP":"visitor"};
+window.T.entryInfo = {"entryId":2,"isAuthor":false,"categoryId":1184847,"categoryLabel":"개발 회고"};
+window.appInfo = {"domain":"tistory.com","topUrl":"https://www.tistory.com","loginUrl":"https://www.tistory.com/auth/login","logoutUrl":"https://www.tistory.com/auth/logout"};
+window.initData = {};
+
+window.TistoryBlog = {
+    basePath: "/m",
+    url: "https://flow-like-river.tistory.com",
+    tistoryUrl: "https://flow-like-river.tistory.com",
+    manageUrl: "https://flow-like-river.tistory.com/manage",
+    token: "W/v8xXcvDsaknywD8RRXeba8WEctRF0ZvC0s+gtWjqbMU6cJ4JxlUSDVUC4Ktj74"
+};
+var servicePath = "";
+var blogURL = "";window.T.gnbContext = {"userId":0,"userName":"","profileSrc":"https://t1.daumcdn.net/tistory_admin/blog/admin/profile_default_03.png","storyServiceURI":{"storyHome":"https://storyhome.kakao.com/","brunchStory":"https://brunch.co.kr/","kakaoStory":"https://story.kakao.com/"},"blogs":[],"tryAutoLogin":false};</script>
+
+                
+                
+                <!-- System - START -->
+
+<!-- System - END -->
+
+                
+                <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
+<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script><meta name="referrer" content="always"/>
+<meta name="google-adsense-platform-account" content="ca-host-pub-9691043933427338"/>
+<meta name="google-adsense-platform-domain" content="tistory.com"/>
+<meta name="description" content="왜 SK 네트웍스 AI 부트캠프를 선택했나? 먼저 다양한 프로그래밍 분야 중에서 왜 AI를 선택했나? 나는 작년 여름까지만 해도 연세대학교 천문학과 대학원에 다니고 있었다.당시에 나의 연구 주제는 시뮬레이션 데이터를 이용한 은하들의 스펙트럼 분석이었다.이때 은하들의 시뮬레이션 데이터가 너무나 방대해서 나에게 필요한 데이터들을 수집해서가공 처리하는 과정에서 코딩을 쓰지 않을 수 없었다.특히 Numpy, Matplotlib 등의 라이브러리를 자주 활용하였다.그러다가 이러한 연구 생활이 나에게 맞지 않는다는 것을 느끼고 대학원을 그만두었다.그럼에도 코딩을 활용하여 데이터를 다루는 스킬을 그대로 버리기에는 아깝기도 하고또한 코딩하는 과정이 나름대로 재미있었기에 그나마 가장 유사한 AI 분야에 대해 좀 더 전문적.."/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://flow-like-river.tistory.com/m/2"/>
+<meta property="og.article.author" content="별이되고싶은우주먼지"/>
+<meta property="og:site_name" content="흘러가는 대로"/>
+<meta property="og:title" content="SK 네트웍스 AI 부트캠프 회고 (8월 3주차)"/>
+<meta name="by" content="별이되고싶은우주먼지"/>
+<meta property="og:description" content="왜 SK 네트웍스 AI 부트캠프를 선택했나? 먼저 다양한 프로그래밍 분야 중에서 왜 AI를 선택했나? 나는 작년 여름까지만 해도 연세대학교 천문학과 대학원에 다니고 있었다.당시에 나의 연구 주제는 시뮬레이션 데이터를 이용한 은하들의 스펙트럼 분석이었다.이때 은하들의 시뮬레이션 데이터가 너무나 방대해서 나에게 필요한 데이터들을 수집해서가공 처리하는 과정에서 코딩을 쓰지 않을 수 없었다.특히 Numpy, Matplotlib 등의 라이브러리를 자주 활용하였다.그러다가 이러한 연구 생활이 나에게 맞지 않는다는 것을 느끼고 대학원을 그만두었다.그럼에도 코딩을 활용하여 데이터를 다루는 스킬을 그대로 버리기에는 아깝기도 하고또한 코딩하는 과정이 나름대로 재미있었기에 그나마 가장 유사한 AI 분야에 대해 좀 더 전문적.."/>
+<meta property="og:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png"/>
+<meta property="article:section" content="'취미'"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@TISTORY"/>
+<meta name="twitter:title" content="SK 네트웍스 AI 부트캠프 회고 (8월 3주차)"/>
+<meta name="twitter:description" content="왜 SK 네트웍스 AI 부트캠프를 선택했나? 먼저 다양한 프로그래밍 분야 중에서 왜 AI를 선택했나? 나는 작년 여름까지만 해도 연세대학교 천문학과 대학원에 다니고 있었다.당시에 나의 연구 주제는 시뮬레이션 데이터를 이용한 은하들의 스펙트럼 분석이었다.이때 은하들의 시뮬레이션 데이터가 너무나 방대해서 나에게 필요한 데이터들을 수집해서가공 처리하는 과정에서 코딩을 쓰지 않을 수 없었다.특히 Numpy, Matplotlib 등의 라이브러리를 자주 활용하였다.그러다가 이러한 연구 생활이 나에게 맞지 않는다는 것을 느끼고 대학원을 그만두었다.그럼에도 코딩을 활용하여 데이터를 다루는 스킬을 그대로 버리기에는 아깝기도 하고또한 코딩하는 과정이 나름대로 재미있었기에 그나마 가장 유사한 AI 분야에 대해 좀 더 전문적.."/>
+<meta property="twitter:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png"/>
+<meta content="https://flow-like-river.tistory.com/2" property="dg:plink" content="https://flow-like-river.tistory.com/2"/>
+<meta name="plink"/>
+<meta name="title" content="SK 네트웍스 AI 부트캠프 회고 (8월 3주차)"/>
+<meta name="article:media_name" content="흘러가는 대로"/>
+<meta property="article:mobile_url" content="https://flow-like-river.tistory.com/m/2"/>
+<meta property="article:pc_url" content="https://flow-like-river.tistory.com/2"/>
+<meta property="article:mobile_view_url" content="https://flow-like-river.tistory.com/m/2"/>
+<meta property="article:pc_view_url" content="https://flow-like-river.tistory.com/2"/>
+<meta property="article:talk_channel_view_url" content="https://flow-like-river.tistory.com/m/2"/>
+<meta property="article:pc_service_home" content="https://www.tistory.com"/>
+<meta property="article:mobile_service_home" content="https://www.tistory.com/m"/>
+<meta property="article:txid" content="6559128_2"/>
+<meta property="article:published_time" content="2024-08-25T07:43:05+09:00"/>
+<meta property="og:regDate" content="20240825074305"/>
+<meta property="article:modified_time" content="2024-08-25T07:43:05+09:00"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-b19812c2e9a466bdf1ee89b9202bbe35784e9525/static/mobile/dist/index.css"/>
+<script type="module" src="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-b19812c2e9a466bdf1ee89b9202bbe35784e9525/static/mobile/dist/index.js" defer=""></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-b19812c2e9a466bdf1ee89b9202bbe35784e9525/static/mobile/dist/index-legacy.js" defer="" nomodule="true"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-b19812c2e9a466bdf1ee89b9202bbe35784e9525/static/mobile/dist/polyfills-legacy.js" defer="" nomodule="true"></script>
+
+                
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 ,minimum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="title" content="SK 네트웍스 AI 부트캠프 회고 (8월 3주차) :: 흘러가는 대로"/>
+    <meta name="description" Content=""/>
+    <title>SK 네트웍스 AI 부트캠프 회고 (8월 3주차)</title>
+
+                
+                
+                <link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-b19812c2e9a466bdf1ee89b9202bbe35784e9525/static/style/revenue.css"/>
+<link rel="canonical" href="https://flow-like-river.tistory.com/2"/>
+
+<!-- BEGIN STRUCTURED_DATA -->
+<script type="application/ld+json">
+    {"@context":"http://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@id":"https://flow-like-river.tistory.com/m/2","name":null},"url":"https://flow-like-river.tistory.com/m/2","headline":"SK 네트웍스 AI 부트캠프 회고 (8월 3주차)","description":"왜 SK 네트웍스 AI 부트캠프를 선택했나?&nbsp;먼저 다양한 프로그래밍 분야 중에서 왜 AI를 선택했나?&nbsp;나는 작년 여름까지만 해도 연세대학교 천문학과 대학원에 다니고 있었다.당시에 나의 연구 주제는 시뮬레이션 데이터를 이용한 은하들의 스펙트럼 분석이었다.이때 은하들의 시뮬레이션 데이터가 너무나 방대해서 나에게 필요한 데이터들을 수집해서가공 처리하는 과정에서 코딩을 쓰지 않을 수 없었다.특히 Numpy, Matplotlib 등의 라이브러리를 자주 활용하였다.그러다가 이러한 연구 생활이 나에게 맞지 않는다는 것을 느끼고 대학원을 그만두었다.그럼에도 코딩을 활용하여 데이터를 다루는 스킬을 그대로 버리기에는 아깝기도 하고또한 코딩하는 과정이 나름대로 재미있었기에 그나마 가장 유사한 AI 분야에 대해 좀 더 전문적..","author":{"@type":"Person","name":"별이되고싶은우주먼지","logo":null},"image":{"@type":"ImageObject","url":"https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Ftistory_admin%2Fstatic%2Fimages%2FopenGraph%2Fopengraph.png","width":"800px","height":"800px"},"datePublished":"2024-08-25T07:43:05+09:00","dateModified":"2024-08-25T07:43:05+09:00","publisher":{"@type":"Organization","name":"TISTORY","logo":{"@type":"ImageObject","url":"https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png","width":"800px","height":"800px"}}}
+</script>
+<!-- END STRUCTURED_DATA -->
+
+                
+                </head>
+                                <body data-role="visitor" data-agent-type="web_mobile_android">
+                
+                
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- 게시글 뷰 -->
+                
+                
+    
+        <div id="entry-view" class="container-doc blog_view ios-safe-area-h b_scroll_retern">
+            <header class="doc-header">
+                <h1 class="doc-title">
+                    <a href="#" id="tistory-home-link" class="link_logo"><span class="tit_logo">티스토리</span></a>
+                    <div data-react-app="StoryServices"></div>
+                </h1>
+                <strong class="tit_blog" style="display:block;"><a href="/m">흘러가는 대로</a></strong>
+                <div class="header_right">
+                    <a data-tiara-layer="search" data-tiara-action-name="GNB> 검색 버튼 클릭" href="/m/search"
+                       class="link_search"><span class="ico_search">검색하기</span></a>
+                    <div data-react-app="Profile" style="display:inline-flex"></div>
+                </div>
+            </header>
+            <main class="doc-main h-full border-box">
+                <section class="inner-main h-full">
+                    <h2 class="screen_out">SK 네트웍스 AI 부트캠프 회고 (8월 3주차)</h2>
+                    <div class="main-content h-full">
+                        <article id="mainContent" class="content-article mobile-article">
+                            <div class="blogview_tit">
+                                <a class="txt_category" href="/m/category/%EA%B0%9C%EB%B0%9C%20%ED%9A%8C%EA%B3%A0"><span
+                                        class="inner_g">개발 회고</span></a>
+                                <h3 class="tit_blogview">SK 네트웍스 AI 부트캠프 회고 (8월 3주차)</h3>
+                            </div>
+                            <div class="blogview_info">
+                                <cite class="by_blog">별이되고싶은우주먼지</cite>
+                                <span class="txt_date"> 2024. 8. 25. 07:43</span>
+                            </div>
+                            <div data-react-app="ChallengeLineBanner"></div>
+                                        <!-- System - START -->
+
+<!-- System - END -->
+
+            <div class="blogview_content useless_p_margin editor_ke" style="height:auto!important"><p data-ke-size="size16">&nbsp;</p>
+<blockquote data-ke-style="style2"><span style="color: #000000;"><b>왜 SK 네트웍스 AI 부트캠프를 선택했나?</b></span></blockquote>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size14"><b><span style="color: #000000;">먼저 다양한 프로그래밍 분야 중에서 왜 AI를 선택했나?</span></b></p>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14"><span style="color: #000000;">나는 작년 여름까지만 해도 연세대학교 천문학과 대학원에 다니고 있었다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">당시에 나의 연구 주제는 시뮬레이션 데이터를 이용한 은하들의 스펙트럼 분석이었다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">이때 은하들의 시뮬레이션 데이터가 너무나 방대해서 나에게 필요한 데이터들을 수집해서</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">가공 처리하는 과정에서 코딩을 쓰지 않을 수 없었다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">특히 Numpy, Matplotlib 등의 라이브러리를 자주 활용하였다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">그러다가 이러한 연구 생활이 나에게 맞지 않는다는 것을 느끼고 대학원을 그만두었다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;"><span style="color: #000000;">그럼에도 코딩을 활용하여 데이터를 다루는 스킬을 그대로 버리기에는 아깝기도 하고</span></span></p>
+<p data-ke-size="size14"><span style="color: #000000;"><span style="color: #000000;">또한 코딩하는 과정이 나름대로 재미있었기에 그나마 가장 유사한 AI 분야에 대해 좀 더 </span></span></p>
+<p data-ke-size="size14"><span style="color: #000000;"><span style="color: #000000;">전문적으로 </span><span style="color: #000000;">배운 후에 그 분야로 취업하려고 한다.</span></span></p>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14"><span style="color: #000000;"><b><span style="color: #000000;">그러면 많은 부트캠프 중에 왜 SK 네트웍스 AI 부트캠프인가?&nbsp;</span></b></span></p>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14"><span style="color: #000000;">사실 더 관심이 가는 부트캠프들도 있었다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">하지만 최대한 빨리 뭐라도 하는 것이 좋을 것 같다는 친구의 조언에 따라</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">일단 가장 빨리 교육이 시작되는 SK 네트웍스 AI 부트캠프에 지원하게 되었다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">생각보다 딱히 거창한 이유는 없다.</span></p>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14">&nbsp;</p>
+<blockquote data-ke-style="style2"><span style="color: #000000;"><b><span style="color: #000000;">교육 1주차 소감</span><br /></b></span></blockquote>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size14"><span style="color: #000000;">일단은 파이썬에 대한 기본적인 것들을 배우고 있다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">교재는 '혼자 공부하는 파이썬'을 쓰고 있는데,</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">이게 나름 구성이 좋아서 어느 정도 개발 지식이 있는 나에게도 꽤 도움이 되고 있다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">진도는 꽤나 빨리 나가고 있는데, 여러 자료형들, 조건문, 반복문, 함수까지 숨가쁘게</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">달려와서 조만간 이 교재가 끝날 듯 하다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">교육 자체는 전반적으로 괜찮은 편이지만, 강사님의 주 언어가 파이썬이 아니라서</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">그런지 약간 덜 전문적인 것 같다고 느껴지는 부분도 있다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">그리고 좋은 점 두 가지가 있는데,</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">첫 번째는 매니저 님들의 운영 및 관리가 세심하게 이루어지고 있다고 느꼈다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;"><span style="color: #000000;">두 번째는 지하 1층에 위치한 구내 식당이 매우 저렴하고 맛있다는 것이다.</span></span></p>
+<p data-ke-size="size14"><span style="color: #000000;"><span style="color: #000000;">아마 부트캠프를 다니면서 돼지가 되지 않을까 싶다...</span></span></p>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14">&nbsp;</p>
+<blockquote data-ke-style="style2"><span style="color: #000000;"><b>앞으로 어떻게 해나가야 할지</b></span></blockquote>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14"><span style="color: #000000;">1주차 교육을 받으면서 가장 큰 문제는 <b>'긴 이동 시간'</b> 이었다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">대략 편도 2시간~2시간 30분이 걸린다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">그렇기 때문에 공부할 시간, 수면 시간 모두 부족해지면서</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">1주차 교육 내내 최악의 컨디션이었다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">그래서 금요일부터 토요일까지 오래 고민해서 맞춤형 계획을 세워보았다.</span></p>
+<p data-ke-size="size14"><span style="color: #000000;">다음 주부터는 계획대로 조금 더 알찬 나날을 보내게 됐으면...</span></p>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14"><span style="color: #000000;">※ 앞으로 회고는 지금처럼 자유 형식을 따를 생각이다.</span></p>
+<p data-ke-size="size14">&nbsp;</p>
+<p data-ke-size="size14"><span style="color: #000000; text-align: start;"> ※ 부트캠프를 다니면서 공부하게 된 내용들은 'Coding study' 카테고리에 따로 정리해서 올릴 생각이다.</span></p></div>
+            <!-- System - START -->
+
+<!-- System - END -->
+
+
+                            
+                        </article>
+                        
+                            <aside class="content-aside cont_tag">
+                                <h3 class="screen_out">태그목록</h3>
+                                <div class="tag_comm">
+                                    <strong class="screen_out">글뷰관련 태그목록</strong>
+                                    <div class="list_tag"><a href="/tag/1%EC%A3%BC%EC%B0%A8" rel="tag">1주차</a>, <a href="/tag/AI" rel="tag">AI</a>, <a href="/tag/SK%20%EB%84%A4%ED%8A%B8%EC%9B%8D%EC%8A%A4" rel="tag">SK 네트웍스</a>, <a href="/tag/%EA%B0%9C%EB%B0%9C%20%ED%9A%8C%EA%B3%A0" rel="tag">개발 회고</a>, <a href="/tag/%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84" rel="tag">부트캠프</a></div>
+                                </div>
+                            </aside>
+                        
+                        <div data-react-app="Supporters"></div>
+                        <aside class="content-aside cont_blog_info">
+                            <h3 class="screen_out">블로그 정보</h3>
+                            <div class="box_blog_info">
+                                <strong class="tit_blog"><a href="/m">흘러가는 대로</a></strong>
+                                
+                                <p class="desc_blog"><a href="/m"></a></p>
+                                <div data-react-app="Subscribe"></div>
+                                <div class="thumb_g">
+                                    <a href="/m">
+                                        <img src="https://img1.daumcdn.net/thumb/S56x56/?scode=mtistory2&fname=https://t1.daumcdn.net/tistory_admin/static/manage/images/r3/default_L.png" class="thumb_profile"
+                                             alt="프로필 사진">
+                                    </a>
+                                </div>
+                            </div>
+                        </aside>
+                        <div data-react-app="CategoryRelated"></div>
+                        
+                            <div id="story-contents-box-root-container"></div>
+                        
+
+                        <div data-react-app="SearchKeyword"></div>
+                        <div data-react-app="Popular"></div>
+
+                        <footer class="doc-footer">
+                            <div class="inner_foot">
+                                <div class="wrap_etc"><strong class="screen_out">문의안내</strong>
+                                    <ul class="list_etcinfo">
+                                        <li><a href="https://tistory.com/m" id="tistory-home-link"
+                                               class="link_txt">티스토리</a></li>
+                                        <li><a href="#" id="login-link" class="link_txt">로그인</a></li>
+                                        <li><a href="https://cs.kakao.com/requests?service=175&locale=ko"
+                                               class="link_txt">고객센터</a></li>
+                                    </ul>
+                                </div>
+                                <p class="desc_g">티스토리는 카카오에서 <span class="ico_heart">사랑</span>을 담아 만듭니다.</p>
+                                <small><a href="https://www.kakaocorp.com/" target="_blank" class="link_corp">©
+                                    Kakao Corp.</a></small>
+                            </div>
+                        </footer>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="bottomBar" data-react-app="BottomBar"></div>
+        <div class="StoryBanner" data-react-app="StoryBanner"></div>
+    
+
+                
+            
+
+    <!-- 공지사항 본문 -->
+    
+
+    <!-- 보호글 본문 -->
+    
+
+
+                        <!-- SyntaxHighlight - START -->
+        <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/styles/atom-one-light.min.css" rel="stylesheet"/><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/delphi.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/php.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/r.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/ruby.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/scala.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/shell.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/sql.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/swift.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/typescript.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/vbnet.min.js" defer></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+        <!-- SyntaxHighlight - END -->
+
+                
+                <script>window.tiara = {"svcDomain":"user.tistory.com","section":"글뷰","trackPage":"글뷰_보기","page":"글뷰","key":"6559128-2","customProps":{"userId":"0","blogId":"6559128","entryId":"2","role":"guest","trackPage":"글뷰_보기","filterTarget":false},"entry":{"entryId":"2","entryTitle":"SK 네트웍스 AI 부트캠프 회고 (8월 3주차)","entryType":"POST","categoryName":"개발 회고","categoryId":"1184847","serviceCategoryName":"취미","serviceCategoryId":107,"author":"6349957","authorNickname":"별이되고싶은우주먼지","blogNmae":"흘러가는 대로","image":"","plink":"/m/2","tags":["1주차","AI","SK 네트웍스","개발 회고","부트캠프"]},"kakaoAppKey":"3e6ddd834b023f24221217e370daed18","appUserId":"null"}</script>
+<script type="module" src="https://t1.daumcdn.net/tistory_admin/frontend/tiara/v1.0.5/index.js"></script>
+<script src="https://t1.daumcdn.net/tistory_admin/frontend/tiara/v1.0.5/polyfills-legacy.js" nomodule="true" defer="true"></script>
+<script src="https://t1.daumcdn.net/tistory_admin/frontend/tiara/v1.0.5/index-legacy.js" nomodule="true" defer="true"></script>
+
+                </body>
+</html>

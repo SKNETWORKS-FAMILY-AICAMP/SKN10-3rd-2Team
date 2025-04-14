@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="ko">
+                                                                <head>
+                <script type="text/javascript">if (!window.T) { window.T = {} }
+window.T.config = {"TOP_SSL_URL":"https://www.tistory.com","PREVIEW":false,"ROLE":"guest","PREV_PAGE":"","NEXT_PAGE":"","BLOG":{"id":6336913,"name":"siqrit","title":"SIQRIT","isDormancy":false,"nickName":"SIQRIT","status":"open","profileStatus":"normal"},"NEED_COMMENT_LOGIN":false,"COMMENT_LOGIN_CONFIRM_MESSAGE":"","LOGIN_URL":"https://www.tistory.com/auth/login/?redirectUrl=https://siqrit.tistory.com/m/6","DEFAULT_URL":"https://siqrit.tistory.com","USER":{"name":null,"homepage":null,"id":0,"profileImage":null},"SUBSCRIPTION":{"status":"none","isConnected":false,"isPending":false,"isWait":false,"isProcessing":false,"isNone":true},"IS_LOGIN":false,"HAS_BLOG":false,"IS_SUPPORT":false,"IS_SCRAPABLE":false,"TOP_URL":"http://www.tistory.com","JOIN_URL":"https://www.tistory.com/member/join","PHASE":"prod","ROLE_GROUP":"visitor"};
+window.T.entryInfo = {"entryId":6,"isAuthor":false,"categoryId":1215985,"categoryLabel":"SK네트웍스 Family AI 캠프 9기"};
+window.appInfo = {"domain":"tistory.com","topUrl":"https://www.tistory.com","loginUrl":"https://www.tistory.com/auth/login","logoutUrl":"https://www.tistory.com/auth/logout"};
+window.initData = {};
+
+window.TistoryBlog = {
+    basePath: "/m",
+    url: "https://siqrit.tistory.com",
+    tistoryUrl: "https://siqrit.tistory.com",
+    manageUrl: "https://siqrit.tistory.com/manage",
+    token: "0aeowVedZYrkVg6yFggjiNZP53guvoAKKH5sjqGapp1vv00kCM0e2yxGy0BmDMZF"
+};
+var servicePath = "";
+var blogURL = "";window.T.gnbContext = {"userId":0,"userName":"","profileSrc":"https://t1.daumcdn.net/tistory_admin/blog/admin/profile_default_03.png","storyServiceURI":{"storyHome":"https://storyhome.kakao.com/","brunchStory":"https://brunch.co.kr/","kakaoStory":"https://story.kakao.com/"},"blogs":[],"tryAutoLogin":false};</script>
+
+                
+                
+                <!-- System - START -->
+
+<!-- System - END -->
+
+                
+                <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
+<script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script><meta name="referrer" content="always"/>
+<meta name="google-adsense-platform-account" content="ca-host-pub-9691043933427338"/>
+<meta name="google-adsense-platform-domain" content="tistory.com"/>
+<meta name="description" content="1. 2주차 Intro 드디어 함수를 만나게 되었다! 또한 클래스를 다루면서 객체와 인스턴스 등 반가운 용어들을 만나게 되었다. 이후로는 파일 입출력, try-except 구문, streamlit을 거쳐 Git 사용법을 다루었다. 나는 예전에 Matlab에서 직접 데이터를 돌리거나, matplotlib를 다루었었기 때문에 이번 주차에서 다룬 전반적인 내용들은 낯선 환경이 아니었지만, 아무래도 streamlit은 처음 사용하는 것이다보니 Markup 언어를 다루던 때가 떠올라서 기분이 영 좋지 않았다.(나는 프론트엔드에 그닥 재미를 느껴본 적이 없다....) 게다가 Git 역시 레포지토리만 만들어본 정도이기에 새로운 배움은 신기했다. Git bash까지 설치하여 branch를 생성함으로써 팀프로젝트 진행에.."/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://siqrit.tistory.com/m/6"/>
+<meta property="og.article.author" content="SIQRIT"/>
+<meta property="og:site_name" content="SIQRIT"/>
+<meta property="og:title" content="SK네트웍스 Family AI 캠프 9기 2주차 회고록"/>
+<meta name="by" content="SIQRIT"/>
+<meta property="og:description" content="1. 2주차 Intro 드디어 함수를 만나게 되었다! 또한 클래스를 다루면서 객체와 인스턴스 등 반가운 용어들을 만나게 되었다. 이후로는 파일 입출력, try-except 구문, streamlit을 거쳐 Git 사용법을 다루었다. 나는 예전에 Matlab에서 직접 데이터를 돌리거나, matplotlib를 다루었었기 때문에 이번 주차에서 다룬 전반적인 내용들은 낯선 환경이 아니었지만, 아무래도 streamlit은 처음 사용하는 것이다보니 Markup 언어를 다루던 때가 떠올라서 기분이 영 좋지 않았다.(나는 프론트엔드에 그닥 재미를 느껴본 적이 없다....) 게다가 Git 역시 레포지토리만 만들어본 정도이기에 새로운 배움은 신기했다. Git bash까지 설치하여 branch를 생성함으로써 팀프로젝트 진행에.."/>
+<meta property="og:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FqlFZF%2FbtsLBVLtvHH%2FCSQq6AAgQfRCZy4URWXLT0%2Fimg.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@TISTORY"/>
+<meta name="twitter:title" content="SK네트웍스 Family AI 캠프 9기 2주차 회고록"/>
+<meta name="twitter:description" content="1. 2주차 Intro 드디어 함수를 만나게 되었다! 또한 클래스를 다루면서 객체와 인스턴스 등 반가운 용어들을 만나게 되었다. 이후로는 파일 입출력, try-except 구문, streamlit을 거쳐 Git 사용법을 다루었다. 나는 예전에 Matlab에서 직접 데이터를 돌리거나, matplotlib를 다루었었기 때문에 이번 주차에서 다룬 전반적인 내용들은 낯선 환경이 아니었지만, 아무래도 streamlit은 처음 사용하는 것이다보니 Markup 언어를 다루던 때가 떠올라서 기분이 영 좋지 않았다.(나는 프론트엔드에 그닥 재미를 느껴본 적이 없다....) 게다가 Git 역시 레포지토리만 만들어본 정도이기에 새로운 배움은 신기했다. Git bash까지 설치하여 branch를 생성함으로써 팀프로젝트 진행에.."/>
+<meta property="twitter:image" content="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FqlFZF%2FbtsLBVLtvHH%2FCSQq6AAgQfRCZy4URWXLT0%2Fimg.png"/>
+<meta content="https://siqrit.tistory.com/6" property="dg:plink" content="https://siqrit.tistory.com/6"/>
+<meta name="plink"/>
+<meta name="title" content="SK네트웍스 Family AI 캠프 9기 2주차 회고록"/>
+<meta name="article:media_name" content="SIQRIT"/>
+<meta property="article:mobile_url" content="https://siqrit.tistory.com/m/6"/>
+<meta property="article:pc_url" content="https://siqrit.tistory.com/6"/>
+<meta property="article:mobile_view_url" content="https://siqrit.tistory.com/m/6"/>
+<meta property="article:pc_view_url" content="https://siqrit.tistory.com/6"/>
+<meta property="article:talk_channel_view_url" content="https://siqrit.tistory.com/m/6"/>
+<meta property="article:pc_service_home" content="https://www.tistory.com"/>
+<meta property="article:mobile_service_home" content="https://www.tistory.com/m"/>
+<meta property="article:txid" content="6336913_6"/>
+<meta property="article:published_time" content="2024-12-30T01:33:23+09:00"/>
+<meta property="og:regDate" content="20241230013323"/>
+<meta property="article:modified_time" content="2024-12-31T10:01:23+09:00"/>
+<link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-b19812c2e9a466bdf1ee89b9202bbe35784e9525/static/mobile/dist/index.css"/>
+<script type="module" src="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-b19812c2e9a466bdf1ee89b9202bbe35784e9525/static/mobile/dist/index.js" defer=""></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-b19812c2e9a466bdf1ee89b9202bbe35784e9525/static/mobile/dist/index-legacy.js" defer="" nomodule="true"></script>
+<script type="text/javascript" src="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-b19812c2e9a466bdf1ee89b9202bbe35784e9525/static/mobile/dist/polyfills-legacy.js" defer="" nomodule="true"></script>
+
+                
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 ,minimum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="title" content="SK네트웍스 Family AI 캠프 9기 2주차 회고록 :: SIQRIT"/>
+    <meta name="description" Content=""/>
+    <title>SK네트웍스 Family AI 캠프 9기 2주차 회고록</title>
+
+                
+                
+                <link rel="stylesheet" type="text/css" href="https://tistory1.daumcdn.net/tistory_admin/userblog/userblog-b19812c2e9a466bdf1ee89b9202bbe35784e9525/static/style/revenue.css"/>
+<link rel="canonical" href="https://siqrit.tistory.com/6"/>
+
+<!-- BEGIN STRUCTURED_DATA -->
+<script type="application/ld+json">
+    {"@context":"http://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@id":"https://siqrit.tistory.com/m/6","name":null},"url":"https://siqrit.tistory.com/m/6","headline":"SK네트웍스 Family AI 캠프 9기 2주차 회고록","description":"1. 2주차 Intro&nbsp;드디어 함수를 만나게 되었다! 또한 클래스를 다루면서 객체와 인스턴스 등 반가운 용어들을 만나게 되었다. 이후로는 파일 입출력, try-except 구문, streamlit을 거쳐 Git 사용법을 다루었다. 나는 예전에 Matlab에서 직접 데이터를 돌리거나, matplotlib를 다루었었기 때문에 이번 주차에서 다룬 전반적인 내용들은 낯선 환경이 아니었지만, 아무래도 streamlit은 처음 사용하는 것이다보니 Markup 언어를 다루던 때가 떠올라서 기분이 영 좋지 않았다.(나는 프론트엔드에 그닥 재미를 느껴본 적이 없다....) 게다가 Git 역시 레포지토리만 만들어본 정도이기에 새로운 배움은 신기했다. Git bash까지 설치하여 branch를 생성함으로써 팀프로젝트 진행에..","author":{"@type":"Person","name":"SIQRIT","logo":null},"image":{"@type":"ImageObject","url":"https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FqlFZF%2FbtsLBVLtvHH%2FCSQq6AAgQfRCZy4URWXLT0%2Fimg.png","width":"800px","height":"800px"},"datePublished":"2024-12-30T01:33:23+09:00","dateModified":"2024-12-31T10:01:23+09:00","publisher":{"@type":"Organization","name":"TISTORY","logo":{"@type":"ImageObject","url":"https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png","width":"800px","height":"800px"}}}
+</script>
+<!-- END STRUCTURED_DATA -->
+
+                
+                </head>
+                                <body data-role="visitor" data-agent-type="web_mobile_android">
+                
+                
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <!-- 게시글 뷰 -->
+                
+                
+    
+        <div id="entry-view" class="container-doc blog_view ios-safe-area-h b_scroll_retern">
+            <header class="doc-header">
+                <h1 class="doc-title">
+                    <a href="#" id="tistory-home-link" class="link_logo"><span class="tit_logo">티스토리</span></a>
+                    <div data-react-app="StoryServices"></div>
+                </h1>
+                <strong class="tit_blog" style="display:block;"><a href="/m">SIQRIT</a></strong>
+                <div class="header_right">
+                    <a data-tiara-layer="search" data-tiara-action-name="GNB> 검색 버튼 클릭" href="/m/search"
+                       class="link_search"><span class="ico_search">검색하기</span></a>
+                    <div data-react-app="Profile" style="display:inline-flex"></div>
+                </div>
+            </header>
+            <main class="doc-main h-full border-box">
+                <section class="inner-main h-full">
+                    <h2 class="screen_out">SK네트웍스 Family AI 캠프 9기 2주차 회고록</h2>
+                    <div class="main-content h-full">
+                        <article id="mainContent" class="content-article mobile-article">
+                            <div class="blogview_tit">
+                                <a class="txt_category" href="/m/category/SK%EB%84%A4%ED%8A%B8%EC%9B%8D%EC%8A%A4%20Family%20AI%20%EC%BA%A0%ED%94%84%209%EA%B8%B0"><span
+                                        class="inner_g">SK네트웍스 Family AI 캠프 9기</span></a>
+                                <h3 class="tit_blogview">SK네트웍스 Family AI 캠프 9기 2주차 회고록</h3>
+                            </div>
+                            <div class="blogview_info">
+                                <cite class="by_blog">SIQRIT</cite>
+                                <span class="txt_date"> 2024. 12. 30. 01:33</span>
+                            </div>
+                            <div data-react-app="ChallengeLineBanner"></div>
+                                        <!-- System - START -->
+
+<!-- System - END -->
+
+            <div class="blogview_content useless_p_margin editor_ke" style="height:auto!important"><p data-ke-size="size16"><b>&nbsp;&nbsp;1. 2주차 Intro</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">드디어 함수를 만나게 되었다! 또한 클래스를 다루면서 객체와 인스턴스 등 반가운 용어들을 만나게 되었다. 이후로는 파일 입출력, try-except 구문, streamlit을 거쳐 Git 사용법을 다루었다. 나는 예전에 Matlab에서 직접 데이터를 돌리거나, matplotlib를 다루었었기 때문에 이번 주차에서 다룬 전반적인 내용들은 낯선 환경이 아니었지만, 아무래도 streamlit은 처음 사용하는 것이다보니 Markup 언어를 다루던 때가 떠올라서 기분이 영 좋지 않았다.(나는 프론트엔드에 그닥 재미를 느껴본 적이 없다....) 게다가 Git 역시 레포지토리만 만들어본 정도이기에 새로운 배움은 신기했다. Git bash까지 설치하여 branch를 생성함으로써 팀프로젝트 진행에 대한 입출력을 다루었는데, Git bash가 리눅스 기반이었기 때문에 Putty를 쓰던 때가 떠올라서 수업을 재밌게 들었다. 안그래도 리눅스에서 ls 명령어로 경로를 확인하다가 윈도우에서 dir 명령어가 기억이 안나서 버벅대는게 당장 작금의 웃픈 현실이었기에.... 여튼, 이번 주차에 대한 나의 대답은 다음과 같다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p style="text-align: center;" data-ke-size="size16"><i>'반갑다, 리눅스 명령어들아!'</i></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; 2. 인스턴스와 객체, 그리고 클래스에 대하여</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">클래스를 다루다보면 객체와 인스턴스를 필연적으로 짚고 넘어가야 한다. 물론 객체와 인스턴스에 대한 관용적인 비유로 붕어빵 틀과 붕어빵의 관계라고 설명을 하지만, 굉장히 레거시하기도 하고 초심자 입장에서는 와닿지 않는다고 생각한다. 다행이도 프로그래밍 언어는 개념적인 측면에서 1대 1 대응이 되는 관계가 아주 많다. 가령, 주소값과 포인터, 레퍼런스와 밸류, 절차지향과 객체지향 등이 바로 그것이다. 물론 처음 접하는 입장에서는 어려우리라 생각한다. 나 역시도 비유를 드는 것을 별로 좋아하지 않고, 정의된 개념을 있는 그대로 받아들이는 것이 가장 좋은 방법이라고 생각한다. 하지만 사람마다 생각하는게 다 다르듯이, 나는 내 방식대로 이 개념을 큰 틀에서 비유로 설명하고자 한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">머릿속에 한 명의 인간이 있다고 가정해보자. 우리는 해당 인간의 신체를 손, 손목, 팔, 어깨, 가슴, 목, 머리, 허리 등 여러 부분들로 나눠서 설명이 가능하다. 그런데 우리가 해당 신체부위가 꼭 그 신체부위가 맞는지 뜯어서 확인하지는 않는다. 겉으로 드러난 부분만 보고도 어느 신체부위인지 확인이 가능하다. 그럼 그 신체부위를 다 모으면 인간이 되는가? 그것도 아니다. 적절한 배치를 맞춰야 한다. 그럼 적절한 배치를 맞춘다고 인간이 움직이는가? 그것도 아니다. 혈액이 들어가서 인간의 신체를 돌아다녀야 인간이 움직일 수 있다. 자, 이 설명을 이해한다면 우리는 객체와 인스턴스, 그리고 클래스에 대해서 다 이해한 것이다!</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">앞선 비유들을 Top-down으로 내려가며 이해해보자. 클래스를 인간이라고 가정할 때, 클래스가 나뉘면 객체가 된다. 인스턴스는 객체가 소프트웨어 상에서 실체화 된 것을 말한다. 즉, 표면상으로 드러나있기에 우리가 주로 다루는 값들이라고 생각하면 편하다. 또한 해당 클래스가 적절하게 작동할 수 있도록 초기값으로 생성자-<span style="color: #333333; text-align: start;">나는 생성자란 말이 직관적이지 않아서 그닥 좋아하지 않는다-</span>를 선언한다. 이제는 Bottom-up으로 올라가며 이해해보자. 초기값으로 세팅한 생성자가 적절한 순서로 배치된 객체를 돌고, 적절한 순서로 배치된 객체가 모여 클래스가 된다. 그렇게 클래스에서 나온 인스턴스를 주로 다루게 되는 것이다!</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><br /><b>&nbsp; 3. 2주차 코드에 대해 다시보자</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 함수</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="1122" data-origin-height="705"><span data-url="https://blog.kakaocdn.net/dn/qlFZF/btsLBVLtvHH/CSQq6AAgQfRCZy4URWXLT0/img.png" data-phocus="https://blog.kakaocdn.net/dn/qlFZF/btsLBVLtvHH/CSQq6AAgQfRCZy4URWXLT0/img.png"><img src="https://blog.kakaocdn.net/dn/qlFZF/btsLBVLtvHH/CSQq6AAgQfRCZy4URWXLT0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FqlFZF%2FbtsLBVLtvHH%2FCSQq6AAgQfRCZy4URWXLT0%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="1122" height="705" data-origin-width="1122" data-origin-height="705"/></span></figure>
+</p>
+<p data-ke-size="size16">함수와 반환의 개념에 대해서 먼저 설명하자면, 왼쪽에 위치한 공간에 = 함수(파라미터)를 할당하는 형태이다. 파라미터는 함수를 움직이는 매개변수이며, 아규먼트는 함수를 호출할 때 실제로 함수에 전달되는 값이다. 즉,&nbsp;아규먼트를&nbsp;넣어서&nbsp;함수를&nbsp;호출하면&nbsp;아규먼트의&nbsp;값을&nbsp;파라미터(매개변수)에&nbsp;할당한다라고&nbsp;생각해도&nbsp;좋겠다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">자, 설명이 끝났으니 다시 위의 코드로 넘어오자면, 두 가지 parameter에 넣어줄 argument들을 변수로 선언해서 동작시키는 모습이다. 파라미터를 거쳐서 값을 넣어주는 경우는 직접 맵핑이 되기에 순서가 달라도 상관없다. 다만, 모든 값들을 순서에 맞춰서 파라미터를 거치지 않고 넣어준다면 모를까, 파라미터에 거치는 경우와 직접 넣어주는 경우를 섞는다면 해당 함수는 작동되지 않는다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 패키징과 언패키징</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="1124" data-origin-height="467"><span data-url="https://blog.kakaocdn.net/dn/btq3hx/btsLBugybNV/lv3FJzrRQ2oytyWxt20DZ0/img.png" data-phocus="https://blog.kakaocdn.net/dn/btq3hx/btsLBugybNV/lv3FJzrRQ2oytyWxt20DZ0/img.png"><img src="https://blog.kakaocdn.net/dn/btq3hx/btsLBugybNV/lv3FJzrRQ2oytyWxt20DZ0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbtq3hx%2FbtsLBugybNV%2Flv3FJzrRQ2oytyWxt20DZ0%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="1124" height="467" data-origin-width="1124" data-origin-height="467"/></span></figure>
+</p>
+<p data-ke-size="size16">다중 입력은 패키징으로 묶어서 처리할 수 있다. 위의 코드는 end를 써서 한 줄에 모두 나온 것이지만, 실제로는 한 줄씩 출력이 된다. 아래의 코드는 5개의 파라미터를 입력받는다. 따라서 입력값은 무조건 5개가 되어야 작동을 한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 람다</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="545" data-origin-height="586"><span data-url="https://blog.kakaocdn.net/dn/bCw9ug/btsLz5vxQLe/HrbdLKScnAeoq5Su9KkQIK/img.png" data-phocus="https://blog.kakaocdn.net/dn/bCw9ug/btsLz5vxQLe/HrbdLKScnAeoq5Su9KkQIK/img.png"><img src="https://blog.kakaocdn.net/dn/bCw9ug/btsLz5vxQLe/HrbdLKScnAeoq5Su9KkQIK/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbCw9ug%2FbtsLz5vxQLe%2FHrbdLKScnAeoq5Su9KkQIK%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="545" height="586" data-origin-width="545" data-origin-height="586"/></span></figure>
+</p>
+<p data-ke-size="size16">람다 함수는 연산의 일종이라고 생각하면 편하다. 일회성으로 사용되기에 자주 나오는 것은 아니지만, 알면 편하게 쓸 수 있다. map 함수는 여러 개의 요소들을 지정된 함수에 대한 결과물로 각각 처리를 하여 새 결과로 생성해주는 함수이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 랜덤 초이스</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="585" data-origin-height="328"><span data-url="https://blog.kakaocdn.net/dn/DZZti/btsLCpMomGE/NpmzNktSxbWdmgK3pgpeI0/img.png" data-phocus="https://blog.kakaocdn.net/dn/DZZti/btsLCpMomGE/NpmzNktSxbWdmgK3pgpeI0/img.png"><img src="https://blog.kakaocdn.net/dn/DZZti/btsLCpMomGE/NpmzNktSxbWdmgK3pgpeI0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FDZZti%2FbtsLCpMomGE%2FNpmzNktSxbWdmgK3pgpeI0%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="585" height="328" data-origin-width="585" data-origin-height="328"/></span></figure>
+</p>
+<p data-ke-size="size16">내장 모듈인 랜덤을 불러와서 패키징을 하여 난수를 반환하는 코드이다. 일상 생활에서 불편함을 느껴 콘솔창에서 pyinstaller를 사용하여 콘솔형 프로그램을 만들어본 사람들이라면 익숙한 광경일 것이다.<s>(그렇다고 프로그램을 다른 환경에서 사용가능하도록 전달하는건 다른 문제이긴 하다.)</s></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 업무 성과</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="900" data-origin-height="625"><span data-url="https://blog.kakaocdn.net/dn/bgEN01/btsLBZNZ1wr/XDDWMd2Tv3hEYjxUVg1xWk/img.png" data-phocus="https://blog.kakaocdn.net/dn/bgEN01/btsLBZNZ1wr/XDDWMd2Tv3hEYjxUVg1xWk/img.png"><img src="https://blog.kakaocdn.net/dn/bgEN01/btsLBZNZ1wr/XDDWMd2Tv3hEYjxUVg1xWk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbgEN01%2FbtsLBZNZ1wr%2FXDDWMd2Tv3hEYjxUVg1xWk%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="900" height="625" data-origin-width="900" data-origin-height="625"/></span></figure>
+</p>
+<p data-ke-size="size16">강사님께서 좋은 문제를 내주셨다. 다중입력 및 다중반환과 연관된 내용이다. 문제의 난이도 자체는 쉽다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 월급 계산 및 세금 공제</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="819" data-origin-height="578"><span data-url="https://blog.kakaocdn.net/dn/r2Ybd/btsLA7FQs1F/KfOPiXUBuKTO8hkUTze110/img.png" data-phocus="https://blog.kakaocdn.net/dn/r2Ybd/btsLA7FQs1F/KfOPiXUBuKTO8hkUTze110/img.png"><img src="https://blog.kakaocdn.net/dn/r2Ybd/btsLA7FQs1F/KfOPiXUBuKTO8hkUTze110/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fr2Ybd%2FbtsLA7FQs1F%2FKfOPiXUBuKTO8hkUTze110%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="819" height="578" data-origin-width="819" data-origin-height="578"/></span></figure>
+</p>
+<p data-ke-size="size16">이 문제도 좋은 문제라고 생각하여 가져왔다. 다중입력에 대한 다중반환값을 함수 밖에서 선언 및 처리하는 문제이다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 클래스: 클래스 속성, 생성자, 그리고 메소드</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="1056" data-origin-height="807"><span data-url="https://blog.kakaocdn.net/dn/PAH8k/btsLCtHYkc6/HQOslFGpVxKPbuIq6D79WK/img.png" data-phocus="https://blog.kakaocdn.net/dn/PAH8k/btsLCtHYkc6/HQOslFGpVxKPbuIq6D79WK/img.png"><img src="https://blog.kakaocdn.net/dn/PAH8k/btsLCtHYkc6/HQOslFGpVxKPbuIq6D79WK/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FPAH8k%2FbtsLCtHYkc6%2FHQOslFGpVxKPbuIq6D79WK%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="1056" height="807" data-origin-width="1056" data-origin-height="807"/></span></figure>
+</p>
+<p data-ke-size="size16">클래스에 대한 기본 내용이다. 클래스는 전역변수로 지정되는 클래스 속성, 초기값으로 작동되는 생성자, 해당 클래스 전체가 공유하며 클래스 밖에서 활용할 수 있는 메소드로 나뉜다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 클래스 속성과 인스턴스 속성의 차이</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="395" data-origin-height="582"><span data-url="https://blog.kakaocdn.net/dn/xEwh0/btsLCs99RxK/lIQhlNP1KDVunadnfs9QFK/img.png" data-phocus="https://blog.kakaocdn.net/dn/xEwh0/btsLCs99RxK/lIQhlNP1KDVunadnfs9QFK/img.png"><img src="https://blog.kakaocdn.net/dn/xEwh0/btsLCs99RxK/lIQhlNP1KDVunadnfs9QFK/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FxEwh0%2FbtsLCs99RxK%2FlIQhlNP1KDVunadnfs9QFK%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="395" height="582" data-origin-width="395" data-origin-height="582"/></span></figure>
+</p>
+<p data-ke-size="size16">빈 리스트를 전역변수로 생성 후, append라는 메소드를 add_skill로 선언하여 사용할 수 있다. 이 경우, append 메소드를 직접적으로 사용하는 것은 불가능하다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 클래스 속성과 인스턴스 속성의 우선순위</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="557" data-origin-height="819"><span data-url="https://blog.kakaocdn.net/dn/kINQC/btsLBYnT3Ik/HPUSgWSHMAjAj98GLoqBGk/img.png" data-phocus="https://blog.kakaocdn.net/dn/kINQC/btsLBYnT3Ik/HPUSgWSHMAjAj98GLoqBGk/img.png"><img src="https://blog.kakaocdn.net/dn/kINQC/btsLBYnT3Ik/HPUSgWSHMAjAj98GLoqBGk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkINQC%2FbtsLBYnT3Ik%2FHPUSgWSHMAjAj98GLoqBGk%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="557" height="819" data-origin-width="557" data-origin-height="819"/></span></figure>
+</p>
+<p data-ke-size="size16">클래스 속성과 인스턴스 속성이 충돌할 경우, 인스턴스 속성이 우선시된다. 이 경우, __class__를 통하여 원래 클래스의 속성이 무엇인지 접근할 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 네임스페이스 테스트: 전역과 로컬</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="474" data-origin-height="485"><span data-url="https://blog.kakaocdn.net/dn/Cv4zM/btsLA59cgKK/uIRC2FiU7Gdi1EBwSyngM0/img.png" data-phocus="https://blog.kakaocdn.net/dn/Cv4zM/btsLA59cgKK/uIRC2FiU7Gdi1EBwSyngM0/img.png"><img src="https://blog.kakaocdn.net/dn/Cv4zM/btsLA59cgKK/uIRC2FiU7Gdi1EBwSyngM0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FCv4zM%2FbtsLA59cgKK%2FuIRC2FiU7Gdi1EBwSyngM0%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="474" height="485" data-origin-width="474" data-origin-height="485"/></span></figure>
+</p>
+<p data-ke-size="size16">전역변수를 global 명령어를 통해 로컬 공간으로 가져와서 변경할 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 네임스페이스 테스트: 논로컬</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="559" data-origin-height="591"><span data-url="https://blog.kakaocdn.net/dn/dUkFym/btsLCtBc4gt/EDcpklRdqm7s6BGPkKpUcK/img.png" data-phocus="https://blog.kakaocdn.net/dn/dUkFym/btsLCtBc4gt/EDcpklRdqm7s6BGPkKpUcK/img.png"><img src="https://blog.kakaocdn.net/dn/dUkFym/btsLCtBc4gt/EDcpklRdqm7s6BGPkKpUcK/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdUkFym%2FbtsLCtBc4gt%2FEDcpklRdqm7s6BGPkKpUcK%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="559" height="591" data-origin-width="559" data-origin-height="591"/></span></figure>
+</p>
+<p data-ke-size="size16">nonlocal 명령어는 전역변수가 아닌 바깥함수에 있는 변수를 해당 로컬공간으로 가져와서 변경할 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 상속</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="432" data-origin-height="616"><span data-url="https://blog.kakaocdn.net/dn/Adzfm/btsLzDeY7oC/WccFOkWWTJ17r6loUrZSxk/img.png" data-phocus="https://blog.kakaocdn.net/dn/Adzfm/btsLzDeY7oC/WccFOkWWTJ17r6loUrZSxk/img.png"><img src="https://blog.kakaocdn.net/dn/Adzfm/btsLzDeY7oC/WccFOkWWTJ17r6loUrZSxk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FAdzfm%2FbtsLzDeY7oC%2FWccFOkWWTJ17r6loUrZSxk%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="432" height="616" data-origin-width="432" data-origin-height="616"/></span></figure>
+</p>
+<p data-ke-size="size16">상속이란 상위 클래스의 인자들을 하위 클래스의 인자들인 것처럼 사용할 수 있는 것을 말한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 다중 상속</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="842" data-origin-height="697"><span data-url="https://blog.kakaocdn.net/dn/bjh5CJ/btsLzEZdVLb/QCCG4XJtHxNaOWRKgQA7g1/img.png" data-phocus="https://blog.kakaocdn.net/dn/bjh5CJ/btsLzEZdVLb/QCCG4XJtHxNaOWRKgQA7g1/img.png"><img src="https://blog.kakaocdn.net/dn/bjh5CJ/btsLzEZdVLb/QCCG4XJtHxNaOWRKgQA7g1/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbjh5CJ%2FbtsLzEZdVLb%2FQCCG4XJtHxNaOWRKgQA7g1%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="842" height="697" data-origin-width="842" data-origin-height="697"/></span></figure>
+</p>
+<p data-ke-size="size16">다중 상속이란,&nbsp;상위 클래스들의 인자들을 하위 클래스의 인자들인 것처럼 사용할 수 있는 것을 말한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 오버라이딩</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="556" data-origin-height="653"><span data-url="https://blog.kakaocdn.net/dn/x2UJr/btsLyW6DwLF/3FcluBvw4a58B7xzgjv3v1/img.png" data-phocus="https://blog.kakaocdn.net/dn/x2UJr/btsLyW6DwLF/3FcluBvw4a58B7xzgjv3v1/img.png"><img src="https://blog.kakaocdn.net/dn/x2UJr/btsLyW6DwLF/3FcluBvw4a58B7xzgjv3v1/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fx2UJr%2FbtsLyW6DwLF%2F3FcluBvw4a58B7xzgjv3v1%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="556" height="653" data-origin-width="556" data-origin-height="653"/></span></figure>
+<figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="395" data-origin-height="495"><span data-url="https://blog.kakaocdn.net/dn/p0gdU/btsLCufOryC/B66mCapiqxKxa64m50HkfK/img.png" data-phocus="https://blog.kakaocdn.net/dn/p0gdU/btsLCufOryC/B66mCapiqxKxa64m50HkfK/img.png"><img src="https://blog.kakaocdn.net/dn/p0gdU/btsLCufOryC/B66mCapiqxKxa64m50HkfK/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fp0gdU%2FbtsLCufOryC%2FB66mCapiqxKxa64m50HkfK%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="395" height="495" data-origin-width="395" data-origin-height="495"/></span></figure>
+<figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="813" data-origin-height="215"><span data-url="https://blog.kakaocdn.net/dn/bt0rfT/btsLzZ2TE5h/OQtcKwgEzrKpHDqM2JahZ1/img.png" data-phocus="https://blog.kakaocdn.net/dn/bt0rfT/btsLzZ2TE5h/OQtcKwgEzrKpHDqM2JahZ1/img.png"><img src="https://blog.kakaocdn.net/dn/bt0rfT/btsLzZ2TE5h/OQtcKwgEzrKpHDqM2JahZ1/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbt0rfT%2FbtsLzZ2TE5h%2FOQtcKwgEzrKpHDqM2JahZ1%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="813" height="215" data-origin-width="813" data-origin-height="215"/></span></figure>
+</p>
+<p data-ke-size="size16">오버라이딩이란, 상위 클래스들의 인자들을 하위 클래스로 가져와 덮어쓰는것을 말한다. 클래스가 상속구조일 경우, 위와 같이 __mro__ 명령어를 통해서 클래스의 다중상속구조를 파악할 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 상속의 특성 통합 테스트</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="800" data-origin-height="630"><span data-url="https://blog.kakaocdn.net/dn/cwKvKm/btsLAYPVCx0/Ddo91cFPwf2iEfJ3d4KSNk/img.png" data-phocus="https://blog.kakaocdn.net/dn/cwKvKm/btsLAYPVCx0/Ddo91cFPwf2iEfJ3d4KSNk/img.png"><img src="https://blog.kakaocdn.net/dn/cwKvKm/btsLAYPVCx0/Ddo91cFPwf2iEfJ3d4KSNk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcwKvKm%2FbtsLAYPVCx0%2FDdo91cFPwf2iEfJ3d4KSNk%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="800" height="630" data-origin-width="800" data-origin-height="630"/></span></figure>
+<figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="1215" data-origin-height="543"><span data-url="https://blog.kakaocdn.net/dn/exJk15/btsLB068qRb/dxgKT4KfkkkzVDotTx4MHk/img.png" data-phocus="https://blog.kakaocdn.net/dn/exJk15/btsLB068qRb/dxgKT4KfkkkzVDotTx4MHk/img.png"><img src="https://blog.kakaocdn.net/dn/exJk15/btsLB068qRb/dxgKT4KfkkkzVDotTx4MHk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FexJk15%2FbtsLB068qRb%2FdxgKT4KfkkkzVDotTx4MHk%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="1215" height="543" data-origin-width="1215" data-origin-height="543"/></span></figure>
+</p>
+<p data-ke-size="size16">좋은 문제라고 생각하여 가져와봤다. 하위 클래스 입력값의 갯수는 상위 클래스 입력값의 갯수에 영향을 받는다. 다만, 반환되는 모든 값들을 사용할 필요는 없다.&nbsp;&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - import와 from-import</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="546" data-origin-height="413"><span data-url="https://blog.kakaocdn.net/dn/cKZ1NA/btsLAS3iBS4/qgdXQ6pTmFp80NEjADTlP0/img.png" data-phocus="https://blog.kakaocdn.net/dn/cKZ1NA/btsLAS3iBS4/qgdXQ6pTmFp80NEjADTlP0/img.png"><img src="https://blog.kakaocdn.net/dn/cKZ1NA/btsLAS3iBS4/qgdXQ6pTmFp80NEjADTlP0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcKZ1NA%2FbtsLAS3iBS4%2FqgdXQ6pTmFp80NEjADTlP0%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="546" height="413" data-origin-width="546" data-origin-height="413"/></span></figure>
+</p>
+<p data-ke-size="size16">import 명령어만 사용하여 호출할 경우, 함수명과 변수명에 모듈명을 전부 붙여줘야 한다. 매우 번거롭다.</p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="535" data-origin-height="414"><span data-url="https://blog.kakaocdn.net/dn/bzEhn5/btsLAbWjDJv/O62Q8gEKy9nJjNTYH7qkJ0/img.png" data-phocus="https://blog.kakaocdn.net/dn/bzEhn5/btsLAbWjDJv/O62Q8gEKy9nJjNTYH7qkJ0/img.png"><img src="https://blog.kakaocdn.net/dn/bzEhn5/btsLAbWjDJv/O62Q8gEKy9nJjNTYH7qkJ0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbzEhn5%2FbtsLAbWjDJv%2FO62Q8gEKy9nJjNTYH7qkJ0%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="535" height="414" data-origin-width="535" data-origin-height="414"/></span></figure>
+</p>
+<p data-ke-size="size16">이 경우에 as 명령어를 통해 모듈명을 축약해서 사용할 수 있다. 앞으로 많이 보게 될 광경일 것이다.</p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="750" data-origin-height="411"><span data-url="https://blog.kakaocdn.net/dn/kYtU1/btsLBZmPHdN/kL5z4NqJjQLN5XHSANWpU1/img.png" data-phocus="https://blog.kakaocdn.net/dn/kYtU1/btsLBZmPHdN/kL5z4NqJjQLN5XHSANWpU1/img.png"><img src="https://blog.kakaocdn.net/dn/kYtU1/btsLBZmPHdN/kL5z4NqJjQLN5XHSANWpU1/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FkYtU1%2FbtsLBZmPHdN%2FkL5z4NqJjQLN5XHSANWpU1%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="750" height="411" data-origin-width="750" data-origin-height="411"/></span></figure>
+</p>
+<p data-ke-size="size16">from-import 명령어로 불러올 수도 있겠지만, 이 역시 번거롭긴 매한가지다.</p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="755" data-origin-height="553"><span data-url="https://blog.kakaocdn.net/dn/ru9Ie/btsLzDsqtQG/ytj0Pd1ZK1KKIkcjdc8LQ1/img.png" data-phocus="https://blog.kakaocdn.net/dn/ru9Ie/btsLzDsqtQG/ytj0Pd1ZK1KKIkcjdc8LQ1/img.png"><img src="https://blog.kakaocdn.net/dn/ru9Ie/btsLzDsqtQG/ytj0Pd1ZK1KKIkcjdc8LQ1/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fru9Ie%2FbtsLzDsqtQG%2Fytj0Pd1ZK1KKIkcjdc8LQ1%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="755" height="553" data-origin-width="755" data-origin-height="553"/></span></figure>
+</p>
+<p data-ke-size="size16">참고로 패키지 내의 다른 모듈을 불러오기 위해선 절대경로로 설정해줘야 한다....</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 내장모듈함수 math</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="647" data-origin-height="537"><span data-url="https://blog.kakaocdn.net/dn/cjcnnW/btsLA6NL1gN/WW8IOfc6a03v08gX2MTfeK/img.png" data-phocus="https://blog.kakaocdn.net/dn/cjcnnW/btsLA6NL1gN/WW8IOfc6a03v08gX2MTfeK/img.png"><img src="https://blog.kakaocdn.net/dn/cjcnnW/btsLA6NL1gN/WW8IOfc6a03v08gX2MTfeK/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcjcnnW%2FbtsLA6NL1gN%2FWW8IOfc6a03v08gX2MTfeK%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="647" height="537" data-origin-width="647" data-origin-height="537"/></span></figure>
+</p>
+<p data-ke-size="size16">내장모듈 math를 불러와서 올림에 해당되는 함수인 ceil과 내림에 해당되는 함수인 floor를 사용할 수 있다. round는 내장모듈함수가 아닌 내장함수라서 자체적으로 사용이 가능하다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 모듈함수 datetime</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="1001" data-origin-height="110"><span data-url="https://blog.kakaocdn.net/dn/Lt9a5/btsLBmphcl4/ACtYRkcLwuq1o6BrKSlDvk/img.png" data-phocus="https://blog.kakaocdn.net/dn/Lt9a5/btsLBmphcl4/ACtYRkcLwuq1o6BrKSlDvk/img.png"><img src="https://blog.kakaocdn.net/dn/Lt9a5/btsLBmphcl4/ACtYRkcLwuq1o6BrKSlDvk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FLt9a5%2FbtsLBmphcl4%2FACtYRkcLwuq1o6BrKSlDvk%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="1001" height="110" data-origin-width="1001" data-origin-height="110"/></span></figure>
+</p>
+<p data-ke-size="size16">datetime의 경우, datetime 모듈 안에 datetime이라는 클래스가 있는 형태이다. 따라서 from-import로 두 번 선언해주거나, import로 호출할 경우, 함수 앞에 datetime.datetime. 형태로 붙여써야 한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 파일 입출력: 쓰기</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="763" data-origin-height="546"><span data-url="https://blog.kakaocdn.net/dn/X1z5n/btsLAAuKtQz/PLHRvooKNMVOIZyXaNO69K/img.png" data-phocus="https://blog.kakaocdn.net/dn/X1z5n/btsLAAuKtQz/PLHRvooKNMVOIZyXaNO69K/img.png"><img src="https://blog.kakaocdn.net/dn/X1z5n/btsLAAuKtQz/PLHRvooKNMVOIZyXaNO69K/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FX1z5n%2FbtsLAAuKtQz%2FPLHRvooKNMVOIZyXaNO69K%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="763" height="546" data-origin-width="763" data-origin-height="546"/></span></figure>
+</p>
+<p data-ke-size="size16">write 모드일 때 파일이 없는 경우, 해당 파일은 없어도 되지만 디렉토리는 반드시 있어야 한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - 파일 입출력: 읽기</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="845" data-origin-height="821"><span data-url="https://blog.kakaocdn.net/dn/A4a8P/btsLCoNtM5t/Mqku8WZlmTtz8tGZ9Ijuq0/img.png" data-phocus="https://blog.kakaocdn.net/dn/A4a8P/btsLCoNtM5t/Mqku8WZlmTtz8tGZ9Ijuq0/img.png"><img src="https://blog.kakaocdn.net/dn/A4a8P/btsLCoNtM5t/Mqku8WZlmTtz8tGZ9Ijuq0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FA4a8P%2FbtsLCoNtM5t%2FMqku8WZlmTtz8tGZ9Ijuq0%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="845" height="821" data-origin-width="845" data-origin-height="821"/></span></figure>
+</p>
+<p data-ke-size="size16">반면에 read 모드일 때 파일이 없는 경우, 아예 에러가 발생한다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - csv 파일 생성 및 입출력</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="742" data-origin-height="547"><span data-url="https://blog.kakaocdn.net/dn/cGdfB2/btsLzr6pyWC/FkmirxP2UmkMuTZu3IKEN0/img.png" data-phocus="https://blog.kakaocdn.net/dn/cGdfB2/btsLzr6pyWC/FkmirxP2UmkMuTZu3IKEN0/img.png"><img src="https://blog.kakaocdn.net/dn/cGdfB2/btsLzr6pyWC/FkmirxP2UmkMuTZu3IKEN0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcGdfB2%2FbtsLzr6pyWC%2FFkmirxP2UmkMuTZu3IKEN0%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="742" height="547" data-origin-width="742" data-origin-height="547"/></span></figure>
+</p>
+<p data-ke-size="size16">writerow 명령어를 사용하면 리스트 형태로 한 줄씩 입력이 가능하다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - log 파일 읽기 및 조건부 출력</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="567" data-origin-height="447"><span data-url="https://blog.kakaocdn.net/dn/dzC2aV/btsLBmivm03/6DZgAZ5hbxYCjz5KUHdD21/img.png" data-phocus="https://blog.kakaocdn.net/dn/dzC2aV/btsLBmivm03/6DZgAZ5hbxYCjz5KUHdD21/img.png"><img src="https://blog.kakaocdn.net/dn/dzC2aV/btsLBmivm03/6DZgAZ5hbxYCjz5KUHdD21/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdzC2aV%2FbtsLBmivm03%2F6DZgAZ5hbxYCjz5KUHdD21%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="567" height="447" data-origin-width="567" data-origin-height="447"/></span></figure>
+</p>
+<p data-ke-size="size16">파일을 읽고, writelines 명령어를 이용하여 다중 줄입력이 가능하다. for문을 사용하면 특정 명령어가 있는 구문만 호출이 가능하다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - try-except 1</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="642" data-origin-height="797"><span data-url="https://blog.kakaocdn.net/dn/sg114/btsLBmivnbb/CanSVrV5eUubA2OXV1Xd50/img.png" data-phocus="https://blog.kakaocdn.net/dn/sg114/btsLBmivnbb/CanSVrV5eUubA2OXV1Xd50/img.png"><img src="https://blog.kakaocdn.net/dn/sg114/btsLBmivnbb/CanSVrV5eUubA2OXV1Xd50/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fsg114%2FbtsLBmivnbb%2FCanSVrV5eUubA2OXV1Xd50%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="642" height="797" data-origin-width="642" data-origin-height="797"/></span></figure>
+</p>
+<p data-ke-size="size16">이것도 프로젝트를 진행하다보면 많이 볼 광경인 try-except 구문이다. except는 if문에서 if문에 elif 및 else가 종속되어있는것과 마찬가지로, try문에는 except와 finally가 종속되어 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - try-except 2</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="736" data-origin-height="805"><span data-url="https://blog.kakaocdn.net/dn/8xouE/btsLzZBPpDK/9ACKv9AIATSxDeWWF5Xa2k/img.png" data-phocus="https://blog.kakaocdn.net/dn/8xouE/btsLzZBPpDK/9ACKv9AIATSxDeWWF5Xa2k/img.png"><img src="https://blog.kakaocdn.net/dn/8xouE/btsLzZBPpDK/9ACKv9AIATSxDeWWF5Xa2k/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F8xouE%2FbtsLzZBPpDK%2F9ACKv9AIATSxDeWWF5Xa2k%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="736" height="805" data-origin-width="736" data-origin-height="805"/></span></figure>
+</p>
+<p data-ke-size="size16">다만 이 경우에 순서가 중요한데, elif 다음에 else가 오는 것과 마찬가지로, except 다음에 finally가 와야 한다. else는 예외가 발생하지 않았을 경우에만 실행이 가능하도록 섞어쓸 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - try-except 3</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="716" data-origin-height="425"><span data-url="https://blog.kakaocdn.net/dn/d1k8iJ/btsLCufOAj1/ZNJBTCbB91pWEQnlvvbagk/img.png" data-phocus="https://blog.kakaocdn.net/dn/d1k8iJ/btsLCufOAj1/ZNJBTCbB91pWEQnlvvbagk/img.png"><img src="https://blog.kakaocdn.net/dn/d1k8iJ/btsLCufOAj1/ZNJBTCbB91pWEQnlvvbagk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fd1k8iJ%2FbtsLCufOAj1%2FZNJBTCbB91pWEQnlvvbagk%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="716" height="425" data-origin-width="716" data-origin-height="425"/></span></figure>
+</p>
+<p data-ke-size="size16">이렇게 출력구문으로 입력값에 대한 오류가 어떻게 발생했는지 알려주는 것도 가능하다. 여기서도 마찬가지로 else 구문을 사용했는데, else 구문은 의도적인 오류 발생이 필요할 때 쓰는 구문으로도 이용이 가능하다. else 구문 하위에 raise '출력하고싶은오류구문('오류시 출력구문')의 형식으로도 만들 수 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - streamlit</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="592" data-origin-height="382"><span data-url="https://blog.kakaocdn.net/dn/bhBVB2/btsLAXcvguC/iV1X0cPh4SdVCt91WrjGhk/img.png" data-phocus="https://blog.kakaocdn.net/dn/bhBVB2/btsLAXcvguC/iV1X0cPh4SdVCt91WrjGhk/img.png"><img src="https://blog.kakaocdn.net/dn/bhBVB2/btsLAXcvguC/iV1X0cPh4SdVCt91WrjGhk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbhBVB2%2FbtsLAXcvguC%2FiV1X0cPh4SdVCt91WrjGhk%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="592" height="382" data-origin-width="592" data-origin-height="382"/></span></figure>
+</p>
+<p data-ke-size="size16">콘솔창에서 pip install streamlit으로 설치하여 사용할 수 있으며, 실행 명령어는 streamlit run '파일이름.py'이다. title, header로 유츄할 수 있겠지만 프론트엔드처럼 동작한다.</p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="733" data-origin-height="815"><span data-url="https://blog.kakaocdn.net/dn/dDtRmR/btsLBx496RX/kc5ByVunU3EPqPiQBk7Gnk/img.png" data-phocus="https://blog.kakaocdn.net/dn/dDtRmR/btsLBx496RX/kc5ByVunU3EPqPiQBk7Gnk/img.png"><img src="https://blog.kakaocdn.net/dn/dDtRmR/btsLBx496RX/kc5ByVunU3EPqPiQBk7Gnk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdDtRmR%2FbtsLBx496RX%2Fkc5ByVunU3EPqPiQBk7Gnk%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="733" height="815" data-origin-width="733" data-origin-height="815"/></span></figure>
+</p>
+<p data-ke-size="size16">빈 컬럼값을 입력함으로써, 해당 페이지의 여백을 주는 것도 가능하다.&nbsp;</p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="719" data-origin-height="718"><span data-url="https://blog.kakaocdn.net/dn/bywom5/btsLCn162HD/Va9UtwcTvN2NIZSD8GQjvk/img.png" data-phocus="https://blog.kakaocdn.net/dn/bywom5/btsLCn162HD/Va9UtwcTvN2NIZSD8GQjvk/img.png"><img src="https://blog.kakaocdn.net/dn/bywom5/btsLCn162HD/Va9UtwcTvN2NIZSD8GQjvk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbywom5%2FbtsLCn162HD%2FVa9UtwcTvN2NIZSD8GQjvk%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="719" height="718" data-origin-width="719" data-origin-height="718"/></span></figure>
+</p>
+<p data-ke-size="size16">data_editor()를 사용하면 실제 화면상에서 변경되는 모습을 볼 수 있다.</p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="689" data-origin-height="385"><span data-url="https://blog.kakaocdn.net/dn/bHh4vc/btsLyVT8tcM/LjuNlwyJw7MUCR0aIyBAxk/img.png" data-phocus="https://blog.kakaocdn.net/dn/bHh4vc/btsLyVT8tcM/LjuNlwyJw7MUCR0aIyBAxk/img.png"><img src="https://blog.kakaocdn.net/dn/bHh4vc/btsLyVT8tcM/LjuNlwyJw7MUCR0aIyBAxk/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbHh4vc%2FbtsLyVT8tcM%2FLjuNlwyJw7MUCR0aIyBAxk%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="689" height="385" data-origin-width="689" data-origin-height="385"/></span></figure>
+</p>
+<p data-ke-size="size16">다만 프론트엔드'처럼' 동작한다고 했지, 실제 프론트엔드가 아니다. streamlit은 화면을 생성할 때마다 처음부터 코드를 렌더링하는 방식이라 저장이 되지 않기 때문에, count를 하고자하는 경우에는 초기 설정을 잡아줘야만 하는 번거로움이 있다.&nbsp;</p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="189" data-origin-height="334"><span data-url="https://blog.kakaocdn.net/dn/1aXee/btsLBrqAjFR/zjHkG85e5mfSpYowHek8w0/img.png" data-phocus="https://blog.kakaocdn.net/dn/1aXee/btsLBrqAjFR/zjHkG85e5mfSpYowHek8w0/img.png"><img src="https://blog.kakaocdn.net/dn/1aXee/btsLBrqAjFR/zjHkG85e5mfSpYowHek8w0/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F1aXee%2FbtsLBrqAjFR%2FzjHkG85e5mfSpYowHek8w0%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="189" height="334" data-origin-width="189" data-origin-height="334"/></span></figure>
+</p>
+<p data-ke-size="size16">나는 streamlit을 처음 써봐서 몰랐던 사실인데, 위와 같이 서브페이지의 경우 디렉토리명을 pages로 고정해야 한다. 또한, _를 공백으로 인식하기 때문에, 페이지의 순서를 설정하고자 하면 페이지명 앞에 '숫자_' 형태로 만들어두는 방법이 있다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; - Git bash 명령어</b></p>
+<p><figure class="imageblock alignCenter" data-ke-mobileStyle="widthOrigin" data-origin-width="965" data-origin-height="831"><span data-url="https://blog.kakaocdn.net/dn/cboucX/btsLAtpaso1/GcmDUrFcmsb3Vl2Ga6yu0K/img.png" data-phocus="https://blog.kakaocdn.net/dn/cboucX/btsLAtpaso1/GcmDUrFcmsb3Vl2Ga6yu0K/img.png"><img src="https://blog.kakaocdn.net/dn/cboucX/btsLAtpaso1/GcmDUrFcmsb3Vl2Ga6yu0K/img.png" srcset="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcboucX%2FbtsLAtpaso1%2FGcmDUrFcmsb3Vl2Ga6yu0K%2Fimg.png" onerror="this.onerror=null; this.src='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png'; this.srcset='//t1.daumcdn.net/tistory_admin/static/images/no-image-v1.png';" loading="lazy" width="965" height="831" data-origin-width="965" data-origin-height="831"/></span></figure>
+</p>
+<p data-ke-size="size16">리눅스 기반의 명령어로 동작하는 Git bash이다. Git을 거의 처음 사용하다시피 하는거라 봐도 무방해서 앞으로 친숙해져야겠다는 생각이 든다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; 4. 2주차 Outro</b></p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">stramlit부터 Git 이용방법까지 내가 모르는 것들이 나왔다. 기억력이 좋은 편이 아니라 이렇게 기록 형태로 남겨두는 것이며, 앞으로 자주 보고 자주 사용하여 친숙해진다면 나도 멋진 현업 개발자로 거듭날 수 있다는 생각이 든다.</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<hr contenteditable="false" data-ke-type="horizontalRule" data-ke-style="style2" />
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16">&nbsp;</p>
+<p data-ke-size="size16"><b>&nbsp; 5. 2주차 YWT 회고</b> <br /><br /><b>&nbsp;&nbsp;-&nbsp;한&nbsp;일(やったこと:&nbsp;일을&nbsp;통해&nbsp;명확히&nbsp;알게&nbsp;되었거나&nbsp;이해한&nbsp;부분)</b> <br /><br />주석처리되어있던 과거의 기억들이 점점 되살아나기 시작했다. 또한 수업을 따라가면서 코딩연습을 열심히 했다고 생각했다.<br /><br /><b>&nbsp;&nbsp;- 배운 것들(わかったこと: 배운 점과 시사점)</b><br /><br />streamlit과 Git 이용방법에 대해 많이 배웠다. 현업에서 팀프로젝트시에 Git bash를 이용하는 경우도 많다고 하니 익숙해져야겠다.<br /><br /><b>&nbsp;&nbsp;-&nbsp;앞으로&nbsp;할&nbsp;일(つぎにやること:&nbsp;응용하여&nbsp;배운&nbsp;것을&nbsp;어디에&nbsp;어떻게&nbsp;적용할지)</b> <br /><br />잠들어 있던 나의 기억들이 점점 깨어나고 있기에, 앞으로는 해당 기억들을 다시 효율적으로 쓸 수 있을 것 같다. 곧 다가올 첫 번째 팀프로젝트에 대비하여 배운 것들을 자유자재로 쓸 수 있도록 해야겠다.</p></div>
+            <!-- System - START -->
+
+<!-- System - END -->
+
+
+                            
+                        </article>
+                        
+                        <div data-react-app="Supporters"></div>
+                        <aside class="content-aside cont_blog_info">
+                            <h3 class="screen_out">블로그 정보</h3>
+                            <div class="box_blog_info">
+                                <strong class="tit_blog"><a href="/m">SIQRIT</a></strong>
+                                
+                                <p class="desc_blog"><a href="/m"></a></p>
+                                <div data-react-app="Subscribe"></div>
+                                <div class="thumb_g">
+                                    <a href="/m">
+                                        <img src="https://img1.daumcdn.net/thumb/S56x56/?scode=mtistory2&fname=https://t1.daumcdn.net/tistory_admin/static/manage/images/r3/default_L.png" class="thumb_profile"
+                                             alt="프로필 사진">
+                                    </a>
+                                </div>
+                            </div>
+                        </aside>
+                        <div data-react-app="CategoryRelated"></div>
+                        
+                            <div id="story-contents-box-root-container"></div>
+                        
+
+                        <div data-react-app="SearchKeyword"></div>
+                        <div data-react-app="Popular"></div>
+
+                        <footer class="doc-footer">
+                            <div class="inner_foot">
+                                <div class="wrap_etc"><strong class="screen_out">문의안내</strong>
+                                    <ul class="list_etcinfo">
+                                        <li><a href="https://tistory.com/m" id="tistory-home-link"
+                                               class="link_txt">티스토리</a></li>
+                                        <li><a href="#" id="login-link" class="link_txt">로그인</a></li>
+                                        <li><a href="https://cs.kakao.com/requests?service=175&locale=ko"
+                                               class="link_txt">고객센터</a></li>
+                                    </ul>
+                                </div>
+                                <p class="desc_g">티스토리는 카카오에서 <span class="ico_heart">사랑</span>을 담아 만듭니다.</p>
+                                <small><a href="https://www.kakaocorp.com/" target="_blank" class="link_corp">©
+                                    Kakao Corp.</a></small>
+                            </div>
+                        </footer>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="bottomBar" data-react-app="BottomBar"></div>
+        <div class="StoryBanner" data-react-app="StoryBanner"></div>
+    
+
+                
+            
+
+    <!-- 공지사항 본문 -->
+    
+
+    <!-- 보호글 본문 -->
+    
+
+
+                        <!-- SyntaxHighlight - START -->
+        <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/styles/atom-one-light.min.css" rel="stylesheet"/><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/delphi.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/php.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/r.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/ruby.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/scala.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/shell.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/sql.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/swift.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/typescript.min.js" defer></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.3/languages/vbnet.min.js" defer></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+        <!-- SyntaxHighlight - END -->
+
+                
+                <script>window.tiara = {"svcDomain":"user.tistory.com","section":"글뷰","trackPage":"글뷰_보기","page":"글뷰","key":"6336913-6","customProps":{"userId":"0","blogId":"6336913","entryId":"6","role":"guest","trackPage":"글뷰_보기","filterTarget":false},"entry":{"entryId":"6","entryTitle":"SK네트웍스 Family AI 캠프 9기 2주차 회고록","entryType":"POST","categoryName":"SK네트웍스 Family AI 캠프 9기","categoryId":"1215985","serviceCategoryName":null,"serviceCategoryId":null,"author":"1418168","authorNickname":"SIQRIT","blogNmae":"SIQRIT","image":"kage@qlFZF/btsLBVLtvHH/CSQq6AAgQfRCZy4URWXLT0","plink":"/m/6","tags":[]},"kakaoAppKey":"3e6ddd834b023f24221217e370daed18","appUserId":"null"}</script>
+<script type="module" src="https://t1.daumcdn.net/tistory_admin/frontend/tiara/v1.0.5/index.js"></script>
+<script src="https://t1.daumcdn.net/tistory_admin/frontend/tiara/v1.0.5/polyfills-legacy.js" nomodule="true" defer="true"></script>
+<script src="https://t1.daumcdn.net/tistory_admin/frontend/tiara/v1.0.5/index-legacy.js" nomodule="true" defer="true"></script>
+
+                </body>
+</html>

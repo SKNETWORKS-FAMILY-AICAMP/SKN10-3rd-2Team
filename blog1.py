@@ -6,9 +6,13 @@ from urllib.parse import urlparse, parse_qs
 import re
 import time
 import random
+import pytesseract
+from PIL import Image
+import io
+import os
 
 # ====== 설정 ======
-INPUT_CSV = '블로그1.csv'
+INPUT_CSV = 'data/블로그1.csv'
 OUTPUT_CSV = 'rag_dataset.csv'
 
 # ====== 초기화 ======
@@ -18,6 +22,20 @@ session.headers.update({
     "User-Agent": ua.chrome,
     "Referer": "https://www.google.com"
 })
+
+# ====== 이미지에서 텍스트 추출 ======
+def extract_text_from_image(image_url):
+    try:
+        # 이미지 다운로드
+        response = session.get(image_url, timeout=5)
+        image = Image.open(io.BytesIO(response.content))
+        
+        # OCR 수행
+        text = pytesseract.image_to_string(image, lang='kor+eng')
+        return text.strip()
+    except Exception as e:
+        print(f"[이미지 텍스트 추출 실패] {image_url} / {e}")
+        return ""
 
 # ====== 네이버 주소 모바일로 변환 ======
 def convert_to_mobile_naver(url):
@@ -52,8 +70,25 @@ def fetch_post(url):
             soup.find("div", class_="post_ct") or
             soup.find("div", class_="view")
         )
+        
+        # 텍스트 내용 추출
         content_text = content.get_text(separator='\n').strip() if content else "본문 없음"
-        return title, content_text
+        
+        # 이미지에서 텍스트 추출
+        image_texts = []
+        for img in content.find_all('img'):
+            img_url = img.get('src')
+            if img_url:
+                img_text = extract_text_from_image(img_url)
+                if img_text:
+                    image_texts.append(img_text)
+        
+        # 텍스트와 이미지 텍스트 결합
+        full_content = content_text
+        if image_texts:
+            full_content += "\n\n[이미지에서 추출된 텍스트]\n" + "\n".join(image_texts)
+            
+        return title, full_content
     except Exception as e:
         print(f"[크롤링 실패] {url} / {e}")
         return None, None
