@@ -196,8 +196,8 @@ def main():
         # 바로가기 버튼
         col_btn1, col_btn2 = st.columns(2)
         with col_btn1:
-            if st.button("🤖 챗봇 시작하기", type="primary", use_container_width=True):
-                switch_to_page("pages/1_🤖_챗봇.py")
+            # st.page_link를 사용하여 페이지 링크 생성
+            st.page_link("pages/1_🤖_챗봇.py", label="🤖 챗봇 시작하기", icon="🤖")
         with col_btn2:
             st.link_button("📚 정보 둘러보기", "https://playdatacademy.notion.site/G-FAQ-b1ea666d01eb42ab8d5f6f941a64eea0", type="secondary", use_container_width=True)
         
@@ -212,15 +212,14 @@ def main():
         col_q1, col_q2 = st.columns(2)
         with col_q1:
             st.link_button("🗓️ 교육 일정", "https://calendar.google.com/calendar/u/0/r?cid=NWQ5ZTU5YTU2NjgwMzQ4NzhiNDVkOGQxNWQ3OGNhZGRkZjAwYjQ1MzdmOTk2Y2E5OTNmNDdlMmQxMWVhODhmZTdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&pli=1", use_container_width=True)
-            if st.button("📝 블로그 회고 작성", use_container_width=True):
-                switch_to_page("pages/1_🤖_챗봇.py")
+            st.page_link("pages/1_🤖_챗봇.py", label="📝 블로그 회고 작성", icon="📝")
         with col_q2:
             st.link_button("👥 단위 프로젝트", "https://github.com/SKNETWORKS-FAMILY-AICAMP", use_container_width=True)
             st.link_button("💰 훈련장려금", "https://www.work24.go.kr/cm/main.do", use_container_width=True)
     
     with col2:
         # SKN 로고 또는 이미지
-        st.image("https://raw.githubusercontent.com/emojiterra/emojiterra/main/img-apple-160/1f680.png", width=280)
+        st.image("SKN_logo.png", width=280)
     
     st.markdown("</div>", unsafe_allow_html=True)  # 모션 효과 div 닫기
     
@@ -280,8 +279,7 @@ def main():
         """, unsafe_allow_html=True)
         
         # 챗봇 시작하기 버튼
-        if st.button("🤖 챗봇 시작하기", key="chatbot_start_btn", use_container_width=True):
-            switch_to_page("pages/1_🤖_챗봇.py")
+        st.page_link("pages/1_🤖_챗봇.py", label="🤖 챗봇 시작하기", icon="🤖")
     
     with col2:
         st.markdown("""
@@ -315,8 +313,7 @@ def main():
         """, unsafe_allow_html=True)
         
         # 챗봇으로 적응 가이드 물어보기 버튼
-        if st.button("💡 적응 가이드 물어보기", key="guide_btn", use_container_width=True):
-            switch_to_page("pages/1_🤖_챗봇.py")
+        st.page_link("pages/1_🤖_챗봇.py", label="💡 적응 가이드 물어보기", icon="💡")
     
     st.divider()
     
