@@ -1,5 +1,8 @@
 import streamlit as st
 import os
+import re
+from typing import Any, Optional, List, Dict
+from common.ollama_manager import OllamaManager
 
 # 페이지 설정 - 반드시 가장 먼저 실행
 st.set_page_config(
@@ -71,11 +74,12 @@ def apply_styles():
         margin: 0.5rem 0;
         transition: all 0.3s;
         width: 100%;
+        cursor: pointer;
+        border: none;
     }
     .primary-button {
         background-color: #FF8A00;
         color: white;
-        border: none;
     }
     .primary-button:hover {
         background-color: #E67E00;
@@ -172,7 +176,83 @@ def apply_styles():
     </style>
     """, unsafe_allow_html=True)
 
+def _preprocess_text(self, text: str) -> str:
+    if not text:
+        return ""
+    
+    # 기본 전처리
+    text = text.strip()
+    
+    # 불필요한 특수문자 제거
+    text = re.sub(r'[^\w\s가-힣]', ' ', text)
+    
+    # 연속된 공백 제거
+    text = re.sub(r'\s+', ' ', text)
+    
+    # 키워드 강조 (중요 단어는 반복)
+    keywords = ["교육", "프로젝트", "캠프", "학습"]
+    for keyword in keywords:
+        if keyword in text:
+            text = text.replace(keyword, f"{keyword} {keyword}")
+    
+    return text
+
+def create_compression_retriever(self, base_compressor: Any, base_retriever: Any):
+    # 컨텍스트 압축 적용
+    return ContextualCompressionRetriever(
+        base_compressor=base_compressor,
+        base_retriever=base_retriever,
+        search_kwargs={"k": 10}  # 더 많은 후보 검색
+    )
+
+def _adjust_threshold(self, query_length: int) -> float:
+    # 쿼리 길이에 따라 임계값 동적 조정
+    if query_length < 5:
+        return 0.15  # 짧은 쿼리는 더 엄격한 임계값
+    elif query_length > 20:
+        return 0.25  # 긴 쿼리는 더 관대한 임계값
+    else:
+        return 0.2  # 기본 임계값
+
+def generate_response(self, prompt: str) -> str:
+    try:
+        response = self.llm(prompt)
+        return response
+    except Exception as e:
+        error_msg = str(e)
+        if "404" in error_msg:
+            return "죄송합니다. AI 모델 서버에 연결할 수 없습니다. 다음 사항을 확인해주세요:\n1. Ollama 서버가 실행 중인지 확인\n2. 'ollama pull gemma:2b' 명령어로 모델 설치\n3. 서버 재시작 후 다시 시도"
+        else:
+            return f"오류가 발생했습니다: {error_msg}"
+
+def retrieve_documents(self, query: str, top_k: Optional[int] = None, threshold: Optional[float] = None) -> List[Dict]:
+    try:
+        # BM25 검색 결과
+        bm25_scores = self.vector_store.bm25.get_scores(self._tokenize(query))
+        
+        # 벡터 검색 결과
+        vector_results = self.vector_store.similarity_search(query, top_k=_top_k * 2)  # 더 많은 후보 검색
+        
+        # 결과 결합 및 재정렬
+        combined_results = []
+        for idx, (doc, vector_score) in enumerate(vector_results):
+            bm25_score = bm25_scores[idx] if idx < len(bm25_scores) else 0
+            combined_score = 0.7 * vector_score + 0.3 * bm25_score  # 가중치 조정
+            
+            if combined_score >= _threshold:
+                combined_results.append((doc, combined_score))
+        
+        # 점수순 정렬 및 상위 K개 반환
+        return sorted(combined_results, key=lambda x: x[1], reverse=True)[:_top_k]
+        
+    except Exception as e:
+        logger.error(f"문서 검색 오류: {str(e)}")
+        return []
+
 def main():
+    # Ollama 서버 확인 및 시작
+    OllamaManager.start_ollama_server()
+    
     # CSS 스타일 적용
     apply_styles()
 
@@ -196,10 +276,17 @@ def main():
         # 바로가기 버튼
         col_btn1, col_btn2 = st.columns(2)
         with col_btn1:
-            # st.page_link를 사용하여 페이지 링크 생성
-            st.page_link("pages/1_🤖_챗봇.py", label="🤖 챗봇 시작하기", icon="🤖")
+            st.markdown("""
+            <a href="pages/1_🤖_챗봇.py" class="custom-button primary-button">
+                🤖 챗봇 시작하기
+            </a>
+            """, unsafe_allow_html=True)
         with col_btn2:
-            st.link_button("📚 정보 둘러보기", "https://playdatacademy.notion.site/G-FAQ-b1ea666d01eb42ab8d5f6f941a64eea0", type="secondary", use_container_width=True)
+            st.markdown("""
+            <a href="https://playdatacademy.notion.site/G-FAQ-b1ea666d01eb42ab8d5f6f941a64eea0" class="custom-button secondary-button">
+                📚 정보 둘러보기
+            </a>
+            """, unsafe_allow_html=True)
         
         # 퀵 액세스: 자주 묻는 질문
         st.markdown("""
@@ -211,11 +298,27 @@ def main():
         # 자주 묻는 질문 버튼들
         col_q1, col_q2 = st.columns(2)
         with col_q1:
-            st.link_button("🗓️ 교육 일정", "https://calendar.google.com/calendar/u/0/r?cid=NWQ5ZTU5YTU2NjgwMzQ4NzhiNDVkOGQxNWQ3OGNhZGRkZjAwYjQ1MzdmOTk2Y2E5OTNmNDdlMmQxMWVhODhmZTdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&pli=1", use_container_width=True)
-            st.page_link("pages/1_🤖_챗봇.py", label="📝 블로그 회고 작성", icon="📝")
+            st.markdown("""
+            <a href="https://calendar.google.com/calendar/u/0/r?cid=NWQ5ZTU5YTU2NjgwMzQ4NzhiNDVkOGQxNWQ3OGNhZGRkZjAwYjQ1MzdmOTk2Y2E5OTNmNDdlMmQxMWVhODhmZTdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&pli=1" class="custom-button secondary-button">
+                🗓️ 교육 일정
+            </a>
+            """, unsafe_allow_html=True)
+            st.markdown("""
+            <a href="pages/1_🤖_챗봇.py" class="custom-button secondary-button">
+                📝 블로그 회고 작성
+            </a>
+            """, unsafe_allow_html=True)
         with col_q2:
-            st.link_button("👥 단위 프로젝트", "https://github.com/SKNETWORKS-FAMILY-AICAMP", use_container_width=True)
-            st.link_button("💰 훈련장려금", "https://www.work24.go.kr/cm/main.do", use_container_width=True)
+            st.markdown("""
+            <a href="https://github.com/SKNETWORKS-FAMILY-AICAMP" class="custom-button secondary-button">
+                👥 단위 프로젝트
+            </a>
+            """, unsafe_allow_html=True)
+            st.markdown("""
+            <a href="https://www.work24.go.kr/cm/main.do" class="custom-button secondary-button">
+                💰 훈련장려금
+            </a>
+            """, unsafe_allow_html=True)
     
     with col2:
         # SKN 로고 또는 이미지
