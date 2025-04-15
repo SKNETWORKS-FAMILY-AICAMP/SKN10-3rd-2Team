@@ -83,18 +83,18 @@
 
 | 구분 | 기술 | 설명 |
 |------|------|------|
-| **언어/환경** | <img src="https://www.python.org/static/community_logos/python-logo.png" width="40"/> Python, `.env` | 전체 백엔드 로직 구현, 환경 설정 |
-| **웹 프레임워크** | <img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png" width="40"/> Streamlit | 사용자 인터페이스 구성 |
-| **데이터 수집** | <img src="https://velog.velcdn.com/images/ujeongoh/post/f135b190-6240-4845-85aa-639246f55740/image.png" width="40"/> requests, BeautifulSoup, fake-useragent | 블로그 및 문서 크롤링 |
-| **데이터 처리** | <img src="https://pandas.pydata.org/static/img/pandas_white.svg" width="40"/> pandas, re, tqdm | 텍스트 전처리 및 필터링 |
+| **언어/환경** |  Python, `.env` | 전체 백엔드 로직 구현, 환경 설정 |
+| **웹 프레임워크** |  Streamlit | 사용자 인터페이스 구성 |
+| **데이터 수집** |  requests, BeautifulSoup, fake-useragent | 블로그 및 문서 크롤링 |
+| **데이터 처리** |  pandas, re, tqdm | 텍스트 전처리 및 필터링 |
 | **문서 처리** | RecursiveCharacterTextSplitter, Document, DataLoader | Q&A 문서 생성 및 청크 분할 |
 | **벡터 저장소** | FAISS (via LangChain) | 문서 임베딩 및 유사 문서 검색 |
-| **임베딩 모델** | <img src="https://img.utdstc.com/icon/6f9/ee0/6f9ee044146aecfd841c98f2a270d996b3e33440142456b9b4349c8bc681857c:200" width="40"/> OllamaEmbeddings, nomic-embed-text | 사용자 쿼리 및 문서 임베딩 처리 |
-| **LLM** | <img src="https://devocean.sk.com/thumnail/2024/8/28/1fc89f92254bed94e769b00b52056d5c6fc64ae7794196218c7050a89fd0852a.png" width="40"/> gemma:2b (Ollama), <img src="https://chatgptfrancais.org/wp-content/uploads/2023/10/ChatGPT-3-2.jpg" width="40"/> OpenAI GPT, <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" width="40"/> llama-cpp | 문맥 기반 응답 생성 |
+| **임베딩 모델** |  OllamaEmbeddings, nomic-embed-text | 사용자 쿼리 및 문서 임베딩 처리 |
+| **LLM** |  gemma:2b (Ollama), OpenAI GPT,  llama-cpp | 문맥 기반 응답 생성 |
 | **RAG 엔진** | VectorStore + similarity_search | RAG 기반 질의응답 구현 |
 | **다중 질의 / 재순위화** | MultiQueryRetriever, CrossEncoderReranker | 질의 다양화 및 문서 정렬 향상 |
 | **문서 압축 검색** | ContextualCompressionRetriever | 불필요한 정보 제거한 요약 검색 |
-| **통합 프레임워크** | <img src="https://miro.medium.com/v2/resize:fit:940/1*44fD_VXcqw2kDWublQLONw.jpeg" width="40"/> LangChain | 벡터 검색, 문서 처리, Retriever 구성 등 전체 파이프라인 기반 |
+| **통합 프레임워크** | LangChain | 벡터 검색, 문서 처리, Retriever 구성 등 전체 파이프라인 기반 |
 
 # 3. 시스템 아키텍처
 
@@ -362,6 +362,41 @@ SK네트웍스 Family AI 캠프의 수강생들을 위한 챗봇 시스템입니
    - 검색 정확도 향상
    - 응답 속도 최적화
    - 피드백 시스템 도입
+
+# 7. 프로젝트 회고
+
+## 팀원별 회고록
+
+### 편성민
+> "파인 튜닝과 RAG를 하는데 들어가는 데이터 처리가 정말 중요하단걸 배웠습니다. 좋은 팀원분들을 만나 작업하는 내내 열심히 할 수 있었습니다."
+
+### 이태수
+> "네이버와 티스토리 등 블로그를 크롤링하는데, 요구하는 기술이 달라서 같은 코드를 사용할 수 없다는게 힘들었고, Runpod에서 모델 성능을 올리려는데 GGUF 변환에서 조금 어려웠습니다."
+
+### 권석현
+> "한국에서는 인터넷상 문화가 부정적인 정보 공유를 많이 하는 경향이 있어, 해외보다 LLM 학습은 쉽지 않다는 것을 깨달았습니다."
+
+### 배민경
+> "좋은 데이터 찾기가 생각보다 힘들었고 학습이 잘 안되는 점이 너무 답답하고 아쉬웠던 것 같습니다. 좋은 팀원분들 만나 짧은 시간 같이 작업하며 유의미한 결과물을 낼 수 있어 좋았습니다."
+
+### 정소열
+> "좋은 팀장님 팀원들 만나서 잘 진행할 수 있었습니다."
+
+## 주요 도전 과제 및 배운 점
+1. **데이터 수집과 처리의 중요성**
+   - 다양한 플랫폼별 크롤링 기술 요구
+   - 양질의 데이터 확보의 어려움
+   - 데이터 전처리의 중요성 인식
+
+2. **모델 성능 최적화**
+   - GGUF 변환 과정에서의 기술적 어려움
+   - Runpod를 활용한 성능 향상 시도
+   - 한국어 데이터의 특수성 고려
+
+3. **팀워크의 중요성**
+   - 효율적인 협업 경험
+   - 팀원 간 지식 공유
+   - 짧은 기간 내 유의미한 결과물 도출
 
 
 
