@@ -13,8 +13,8 @@
       <a href="https://github.com/youngseo98"><b>@편성민</b></a>
     </td>
     <td align="center">
-      <img src="https://github.com/Leegwangwoon.png" width="100px"><br/>
-      <a href="https://github.com/Leegwangwoon"><b>@이태수</b></a>
+      <img src="https://github.com/beartaesu.png" width="100px"><br/>
+      <a href="https://github.com/beartaesu"><b>@이태수</b></a>
     </td>
     <td align="center">
       <img src="https://github.com/daainn.png" width="100px"><br/>
