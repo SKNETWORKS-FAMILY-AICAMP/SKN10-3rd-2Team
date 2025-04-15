@@ -9,22 +9,28 @@
 <table align="center" width="100%">
   <tr>
     <td align="center">
+      <img src="https://github.com/youngseo98.png" width="100px"><br/>
       <a href="https://github.com/youngseo98"><b>@편성민</b></a>
     </td>
     <td align="center">
+      <img src="https://github.com/Leegwangwoon.png" width="100px"><br/>
       <a href="https://github.com/Leegwangwoon"><b>@이태수</b></a>
     </td>
     <td align="center">
+      <img src="https://github.com/daainn.png" width="100px"><br/>
       <a href="https://github.com/daainn"><b>@권석현</b></a>
     </td>
     <td align="center">
+      <img src="https://github.com/ohback.png" width="100px"><br/>
       <a href="https://github.com/ohback"><b>@배민경</b></a>
     </td>
     <td align="center">
+      <img src="https://github.com/SIQRIT.png" width="100px"><br/>
       <a href="https://github.com/SIQRIT"><b>@정소열</b></a>
     </td>
   </tr>
 </table>
+
 
 <br>
 
@@ -234,3 +240,18 @@ caption: 영상 자막 내용
 ### 요구사항
 - 참가자가 필요한 핵심 가이드를 쉽게 확인할 수 있도록 인터페이스 제공
 - 각 가이드는 부트캠프 관련 문제 해결 및 학습 방법을 안내
+
+### 🙋‍♂️ 편성민 @youngseo98
+> RAG를 처음 접했지만 하나씩 구조를 익히면서 구현해 나가는 과정이 매우 유익했습니다. 특히 벡터 스토어를 처음부터 구축해본 경험이 좋았습니다.
+
+### 🙋‍♂️ 이태수 @Leegwangwoon
+> 임베딩 모델 튜닝과 LLM 연동까지 직접 다뤄볼 수 있어 재미있었고, 실제 학습자 입장에서 어떻게 도움이 될 수 있을지 고민하며 개발할 수 있었던 시간이었습니다.
+
+### 🙋‍♂️ 권석현 @daainn
+> 데이터 수집과 전처리를 맡으며 다양한 예외 케이스에 대응하는 법을 배웠고, 실서비스에서의 데이터 정제 중요성을 느꼈습니다.
+
+### 🙋‍♀️ 배민경 @ohback
+> Streamlit UI 구성을 통해 사용자 입장에서 보이는 챗봇의 역할과 중요성을 새삼 느낄 수 있었고, 사용자 경험을 고려한 설계의 중요성을 배웠습니다.
+
+### 🙋‍♂️ 정소열 @SIQRIT
+> 재순위화와 검색 최적화 부분을 맡으며 다양한 쿼리 전략을 실험해보았고, 모델의 응답 품질을 어떻게 향상시킬 수 있을지 체계적으로 고민할 수 있었습니다.
