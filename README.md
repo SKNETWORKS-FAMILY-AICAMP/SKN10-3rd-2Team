@@ -149,16 +149,11 @@
 
 - 크롤링 시 브라우저 환경을 모방하기 위해 다음과 같은 헤더 사용:
 
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
-    "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7"
-}
+![image](https://github.com/user-attachments/assets/c71b40c8-6e21-4901-8e23-7563b3955fc1)
 
 -세션 유지 및 IP 차단 방지를 위한 시간 간격(2~3초)을 두고 수집 진행
 
-- 유튜브 영상
-
-- YouTube Data API 사용
+- 유튜브 영상 : YouTube Data API 사용
 
 - 영상 ID, URL, 제목, 업로드 날짜, 채널명, 자막 정보 수집
 
