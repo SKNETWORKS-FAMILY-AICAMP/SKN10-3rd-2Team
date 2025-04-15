@@ -99,7 +99,7 @@
 # 3. 시스템 아키텍처
 
 ## 시스템 구조
-![시스템 구조 다이어그램](img/drawio.png)
+![시스템 구조 다이어그램](https://github.com/user-attachments/assets/eeb5bb9a-7302-4dd2-8ba0-f84a67b7ee47)
 
 ### 주요 컴포넌트 설명
 
