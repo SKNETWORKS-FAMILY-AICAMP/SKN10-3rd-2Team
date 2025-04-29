@@ -194,23 +194,29 @@ if st.session_state.active_tab == "campus":
     # 예시 질문 버튼
     campus_examples = [
         "부트캠프 일정은 어떻게 되나요?",
-        "과제는 어떻게 제출하나요?",
-        "사용 가능한 병가 개수는 어떻게 되나요?",
-        "지각과 조퇴는 어떻게 처리되나요?"
+        "훈련장려금은 언제, 어떻게 신청하나요?",
+        "국민 취업 지원 제도의 조건과 신청하는 방법은 어떻게 되나요?",
+        "병가 사용 시 필요한 증빙자료는 어떤 서류가 필요한가요?",
+        "지각이나 조퇴, 결석은 어떻게 처리되나요?",
+        "팀 프로젝트는 어떻게 진행되나요?"
     ]
     
     col1, col2 = st.columns(2)
     with col1:
         if st.button("부트캠프 일정", key="campus_ex_0"):
             st.session_state.campus_input = campus_examples[0]
-        if st.button("병가 개수", key="campus_ex_2"):
-            st.session_state.campus_input = campus_examples[2]
+        if st.button("훈련장려금", key="campus_ex_1"):
+            st.session_state.campus_input = campus_examples[1]
+        if st.button("병가 증빙", key="campus_ex_3"):
+            st.session_state.campus_input = campus_examples[3]
     
     with col2:
-        if st.button("과제 제출", key="campus_ex_1"):
-            st.session_state.campus_input = campus_examples[1]
-        if st.button("지각/조퇴", key="campus_ex_3"):
-            st.session_state.campus_input = campus_examples[3]
+        if st.button("국민취업지원", key="campus_ex_2"):
+            st.session_state.campus_input = campus_examples[2]
+        if st.button("출결 처리", key="campus_ex_4"):
+            st.session_state.campus_input = campus_examples[4]
+        if st.button("팀 프로젝트", key="campus_ex_5"):
+            st.session_state.campus_input = campus_examples[5]
     
     # 현재 메시지 표시
     for message in st.session_state.campus_messages:
